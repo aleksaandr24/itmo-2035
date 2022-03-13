@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Практическая работа 8.5</title>
+</head>
+<body>
+    <form name="contact" action="#" method="post">
+        <p>
+            <select name="optionList" size="2">
+                <option value="1">Classic</option>
+                <option value="2">Police Cruiser</option>
+            </select><br>
+            <input type="radio" name="vehicles" checked="true" value="1" onclick="resetOptionList(this.value);">Motorcycles
+            <input type="radio" name="vehicles" value="2" onclick="resetOptionList(this.value);">Cars<br>
+            <input name="submit" value="Submit" type="submit">
+            <input name="reset" value="Reset" type="reset">
+        </p>
+    </form>
+    <script>
+        {
+            "use strict";
+
+            function resetOptionList(elementValue) {
+                with(document.forms.contact) {
+                    if (elementValue == 1) {
+                        optionList[0].text = "Classic";
+                        optionList[0].value = 1;
+                        optionList[1].text = "Police Cruiser";
+                        optionList[1].value = 2;
+                    }
+                    if (elementValue == 2) {
+                        optionList[0].text = "Ford";
+                        optionList[0].value = 1;
+                        optionList[1].text = "Chevy";
+                        optionList[1].value = 2;
+                    }
+                }
+            }
+        }
+    </script>
+</body>
+</html>

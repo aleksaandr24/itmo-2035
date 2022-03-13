@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Самостоятельная работа 8.3</title>
+    <style>
+        .typeOfVehicles label {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <form name="cars" action="http://www.jimkeogh.com" method="post">
+        <select name="optionList" size="5">
+            <option value=1>Classic</option>
+            <option value=2>Police Cruiser</option>
+        </select>
+        <div class="typeOfVehicles">
+            <label><input type="radio" name="vehicles" checked="true" value=1 onclick="resetOptionList(this.value);">Motorcycles</label>
+            <label><input type="radio" name="vehicles" value=2 onclick="resetOptionList(this.value);">Cars</label>
+        </div>
+        <input name="Submit" value="Submit" type="submit">
+        <input name="Reset" value="Reset" type="reset">
+    </form>
+    <script>
+        {
+            "use strict";
+
+            function buildOptions(objData, root) {
+                let newOption;
+                for (let item in objData) {
+                    newOption = document.createElement("option");
+                    newOption.value = objData[item].value;
+                    newOption.innerText = objData[item].name;
+                    console.log(newOption);
+                    root.appendChild(newOption);
+                }
+            }
+
+            function resetOptionList(elementValue) {
+                let cars = document.forms.cars;
+                let listCars = {
+                    moto: {
+                        0: {
+                            name: "Classic",
+                            value: 1
+                        },
+                        1: {
+                            name: "Police Cruiser",
+                            value: 2
+                        },
+                        2: {
+                            name: "Harley Davidson",
+                            value: 3
+                        },
+                    },
+                    cars: {
+                        0: {
+                            name: "Ford",
+                            value: 1
+                        },
+                        1: {
+                            name: "Chevy",
+                            value: 2
+                        }
+                    }
+                }
+
+                console.log("Выбрано значение: " + elementValue);
+                if (elementValue == 1) {
+                    cars.optionList.innerHTML = "";
+                    buildOptions(listCars.moto, cars.optionList);
+                }
+                if (elementValue == 2) {
+                    cars.optionList.innerHTML = "";
+                    buildOptions(listCars.cars, cars.optionList);
+                }
+            }
+        }
+    </script>
+</body>
+</html>

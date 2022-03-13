@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Самостоятельная работа 3.3</title>    
+    <style>
+        h1 {
+            color: #ff0000;
+            font-size: 18px;
+            text-decoration: underline;
+        }
+    </style>    
+</head>
+<body>
+    <h1 id="newW"></h1>
+    <h6 id="date">11 января 2011 года</h6>
+    <p><span>Введите старую зарплату</span><input type="text" name="old" id="oldW"></p>
+    <p><span>Введите коэффициент повышения зарплаты</span><input type="text" name="coefficient" id="coefficientW"></p>
+    <input type="submit" onclick="processingForm()" value="Рассчитать">
+    <script>
+        {
+            "use strict";
+            function Wages(oldWages, coefficientWages) {
+                let newWages = oldWages * coefficientWages;
+                let date = document.getElementById("date").innerHTML;
+                document.getElementById("newW").innerHTML = "Ваша новая зарплата " + newWages + " рублей. " + date;                
+            }
+        
+            /* внесены следующие изменения */
+            /* добавили ключевое слово function перед имененем функции для корректного объявления функции */
+            function processingForm() {
+                /* добавили оператор = для корректного присваивания переменной oldW значения выражения */
+                /* указали второй аргумент radix функции parseInt() 10 вместо 2 для получения значения в десятичной системе
+                для правильного вычисления выражения в функции Wages() */
+                let oldW = parseInt(document.getElementById("oldW").value, 10);
+                /* указали правильное ключевое слово let для корректного объявления переменной */
+                /* указали второй аргумент radix функции parseInt() 10 вместо 8 для получения значения в десятичной системе
+                для правильного вычисления выражения в функции Wages() */
+                let coefficientW = parseInt(document.getElementById("coefficientW").value, 10);
+                /* указали корректное имя вызываемой функции Wages(), объявленной выше */
+                Wages(oldW, coefficientW);
+            }
+        }
+    </script>    
+</body>
+</html>

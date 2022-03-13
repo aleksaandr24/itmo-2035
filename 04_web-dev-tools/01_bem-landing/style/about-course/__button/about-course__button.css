@@ -1,0 +1,9 @@
+.about-course__button {
+    width: 100%;
+    height: 100%;
+    background-color: #C93555;
+    border-radius: 35px;
+    display: flex;
+    padding-top: 0px;
+    align-content: center;
+}

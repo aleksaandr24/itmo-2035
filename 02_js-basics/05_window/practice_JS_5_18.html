@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Практическая работа 5.18</title> 
+</head>
+<body>    
+    Введите год рождения<input type="text" id="year"><br>
+    Введите месяц рождения (1-12)<input type="text" id="month"><br>
+    Введите день рождения<input type="text" id="day"><br>
+    <input type="button" value="Рассчитать" onclick="showDate();"><br>
+    <b id="date"></b><br>
+    <script>
+        {
+            "use strict";
+            
+            showDate = () => {                
+                let oneSecond = 1000;
+                let oneMinute = oneSecond * 60;
+                let oneHour = oneMinute * 60;
+                let oneDay = oneHour * 24;
+                let oneWeek = oneDay * 7;
+                let userYear = document.getElementById("year").value;
+                let userMonth = document.getElementById("month").value;
+                let userDay = document.getElementById("day").value;
+                let userDate = new Date();
+                userDate.setFullYear(userYear);
+                userDate.setMonth(userMonth);
+                userDate.setDate(userDay);
+                let currentDate = new Date();
+                let userMs = userDate.getTime();
+                let currentMs = currentDate.getTime();
+                let ageMs = currentMs - userMs;
+                let ageSeconds = Math.round(ageMs / oneSecond);
+                let ageMinutes = Math.round(ageMs / oneMinute);
+                let ageHours = Math.round(ageMs / oneHour);
+                let ageDays = Math.round(ageMs / oneDay);
+                let ageWeeks = Math.round(ageMs / oneWeek);
+
+                text = "Вы живете:<br>" +
+                        ageSeconds + " секунд<br>" +
+                        ageMinutes + " минут<br>" +
+                        ageHours + " часов<br>" +
+                        ageDays + " дней<br>" +
+                        ageWeeks + " недель";
+                document.getElementById("date").innerHTML = text;
+            }
+        }
+    </script>
+</body>
+</html>

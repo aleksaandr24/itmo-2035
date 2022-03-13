@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Практическая работа 6.4</title>
+    <style>
+        .bgRedText {
+            background-color: red;
+        }
+        .bgGreenText {
+            background-color: green;
+        }
+    </style>
+</head>
+<body>
+    <p class="bgRedText" id="textP">Текст</p>
+    <input type="button" onclick="styleReplace()" value="Изменить стиль"><br>
+    <b id="textB"></b>
+    <script>
+        {
+            "use strict";
+            
+            function styleReplace() {
+                let a = document.getElementById("textP");
+                let text = a + "<br>";
+                text += a.className + "<br>";
+                a.className = "bgGreenText";
+                text += a.className + "<br>";
+                document.getElementById("textB").innerHTML = text;
+            }
+        }
+    </script>
+</body>
+</html>

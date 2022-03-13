@@ -1,0 +1,12 @@
+@import url("./__button-container/about-course__button-container.css");
+@import url("./__button/about-course__button.css");
+@import url("./__button-link/about-course__button-link.css");
+@import url("./__container/about-course__container.css");
+@import url("./__text/about-course__text.css");
+@import url("./__title/about-course__title.css");
+@import url("./__row/about-course__row.css");
+
+.about-course {
+    height: 820px;
+    background-color: #130B5B;
+}

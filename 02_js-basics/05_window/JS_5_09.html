@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Самостоятельная работа 5.9</title>
+</head>
+<body>
+    Введите число: <input type="text" value="162.8414191622" id="inputNumber"><br>
+    Введите кол-во знаков после запятой: <input type="text" value="3" id="inputRound"><br>
+    <input type="button" value="Округлить" onclick="printRoundedNumber()"><br>
+    Результат: <b id="outputB"></b>
+    <script>
+        {
+            "use strict";
+            
+            function getRoundedNumber(num, rnd) {
+                return Math.round(num * (10 ** rnd)) / (10 ** rnd);
+            }
+
+            function printRoundedNumber() {
+                let userNumber = Number(document.getElementById("inputNumber").value);
+                let userRound = Number(document.getElementById("inputRound").value);
+                let roundedNumber = getRoundedNumber(userNumber, userRound);                
+                document.getElementById("outputB").innerHTML = roundedNumber;
+            }
+        }
+    </script>
+</body>
+</html>

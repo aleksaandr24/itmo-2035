@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Самостоятельная работа 5.7</title>
+</head>
+<body>
+    Введите кол-во миллисекунд: <input type="text" value="1628414191622" id="inputMS"><br>
+    <input type="button" value="Получить Date" onclick="showDateProperties()"><br>
+    <b id="outputB"></b>
+    <script>
+        {
+            "use strict";
+            
+            function getDateProperties(milliseconds) {
+                let newDate = new Date(milliseconds);
+                let newDateObject = {};
+                newDateObject["day"] = newDate.getDay();
+                newDateObject["date"] = newDate.getDate();
+                newDateObject["month"] = newDate.getMonth();
+                newDateObject["year"] = newDate.getFullYear();
+                newDateObject["hours"] = newDate.getHours();
+                newDateObject["minutes"] = newDate.getMinutes();
+                newDateObject["seconds"] = newDate.getSeconds();
+                return newDateObject;
+            }
+            
+            function showDateProperties() {
+                let userMS = Number(document.getElementById("inputMS").value);
+                let result = getDateProperties(userMS);
+                let outputText = "";
+                for (let key in result) {
+                    outputText += key + ": " + result[key] + "<br>";
+                }
+                document.getElementById("outputB").innerHTML = outputText;
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,4 @@
+.footer__link, .footer__link:visited {
+    text-decoration: none;
+    margin-bottom: 18px;
+}

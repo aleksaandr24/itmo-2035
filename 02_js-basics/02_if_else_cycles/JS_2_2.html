@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Самостоятельная работа 2.2</title>    
+</head>
+<body>
+    <script>
+        {
+            "use strict";
+            let arrOfNumbers = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+            let odd = [], even = [];
+            for (let i = 0; i < arrOfNumbers.length; i++) {
+                if (arrOfNumbers[i] % 2 == 0) {
+                    even.push(arrOfNumbers[i]);
+                } else {
+                    odd.push(arrOfNumbers[i]);
+                }
+            }
+            console.log(`even = [${even}]`);
+            console.log(`odd = [${odd}]`);
+        }
+    </script>
+</body>
+</html>

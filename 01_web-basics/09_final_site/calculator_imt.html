@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="ru" xmlns:og="http://ogp.me/ns#" xmlns:fb="http://ogp.me/ns/fb#">
+<head>
+	<title>Калькулятор ИМТ - Принципы здоровой жизни</title>
+	<meta charset="utf-8"/>
+    <meta property="og:title" content="Калькулятор ИМТ" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="//127.0.0.1:5500/calculator_imt.html" />
+    <meta property="og:image" content="//127.0.0.1:5500/img/pic_rest1.jpg" />
+    <meta property="og:description" content="Калькулятор ИМТ рассчитывает соотношение вашего веса и роста. Этот индикатор позволяет узнать, находится ли ваш вес в пределах нормы." />
+    <meta property="og:determiner" content="auto" />
+    <meta property="og:locale" content="ru_RU" />
+    <meta property="og:site_name" content="Принципы здоровой жизни" />
+    <meta http-equiv="content-language" content="ru">
+    <meta name="description" content="Калькулятор ИМТ рассчитывает соотношение вашего веса и роста. Этот индикатор позволяет узнать, находится ли ваш вес в пределах нормы.">
+    <meta name="keywords" content="Калькулятор, ИМТ, соотношение, рост, вес, возраст, норма">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+</head>
+<body>
+    <div class="container">        
+        <div class="row">
+            <div class="col col-sm-10 col-md-8 col-lg-8">                 
+                <div class="header__name"><table><tr><td><i class="fas fa-heartbeat header__name__i"></i></td><td>Принципы здоровой жизни</td></tr></table></div>
+            </div>             
+            <div class="col col-sm-2 col-md-4 col-lg-4">
+                <div class="header__quote">
+                    <p><q>На состояние здоровья ссылаются во всех случаях, даже здоровые прибегают к этому.</q></p>
+                    <p>Ф. Бэкон</p>
+                </div>
+            </div>                        
+        </div>
+        <div class="row">
+            <div class="col col-md-12 col-lg-12">
+                <nav>
+                    <ul class="menu">
+                        <li><a href="index.html">Главная</a></li>
+                        <li><a href="food.html">Питание</a></li>
+                        <li><a href="calculator_imt.html">Калькулятор ИМТ</a></li>
+                    </ul>
+                </nav>            
+            </div>
+        </div>        
+        <div class="row content_divider"></div>
+        <div class="row">
+            <div class="col col-md-2 col-lg-2">
+                <p>Поделиться:</p>
+                <a href="https://www.facebook.com/sharer/sharer.php?u=http://127.0.0.1:5500/"><img class="animation_share_button" src="img/facebook.png" alt="facebook"></a>
+                <a href="https://vk.com/share.php?url=http://127.0.0.1:5500/"><img class="animation_share_button" src="img/vk.png" alt="vk"></a>         
+                <a href="mailto:email.com?subject=Shared_Site&message=http://127.0.0.1:5500/"><img class="animation_share_button" src="img/emailimg.png" alt="emailimg"></a>
+                <p>Распечатать:</p>
+                <a href="javascript:(print());"><img class="animation_share_button" src="img/print.png" alt="print"></a>
+            </div>
+            <div class="col col-md-7  col-lg-7">
+                <p><strong>Калькулятор ИМТ</strong> рассчитывает соотношение вашего веса и роста. Этот индикатор позволяет узнать, находится ли ваш вес в пределах нормы.</p>
+                <form action="#" method="post">
+                    <table class="calc_table">
+                        <tr>
+                            <td>Введите ваш вес</td>
+                            <td><input type="number" name="calc_form_weight" min="40" max="150" value="65">кг</td>
+                        </tr>
+                        <tr>
+                            <td>Введите ваш рост</td>
+                            <td><input type="number" name="calc_form_height" min="50" max="250" value="175">см</td>
+                        </tr>
+                        <tr>
+                            <td>Введите ваш возраст</td>
+                            <td><input type="number" name="calc_form_age" min="18" max="150" value="25">лет</td>
+                        </tr>
+                        <tr>
+                            <td>Выберите ваш пол</td>
+                            <td><label><input type="radio" name="calc_form_sex" value="0" checked="checked">мужской</label>
+                                <label><input type="radio" name="calc_form_sex" value="1">женский</label></td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">Дополнительно:</td>
+                        </tr>
+                        <tr>
+                            <td>ампутация части тела</td>
+                            <td><label><input type="radio" name="calc_form_amputation" value="0" checked="checked">нет</label>
+                                <label><input type="radio" name="calc_form_amputation" value="1">да</label></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td><input type="reset" value="Сбросить"><input type="submit" value="Рассчитать"></td>
+                        </tr>
+                        <tr>
+                            <td>Ваш результат:</td>
+                            <td><output name="calc_form_result">20.0</output></td>
+                        </tr>
+                    </table>
+                </form>
+                <h3>Значение показателей ИМТ</h3>
+                <table class="imt__table">
+                    <tr><th></th><th>до 65 лет</th><th>от 65 до 74 лет</th><th>75 лет и старше</th></tr>
+                    <tr><th>Недостаточный вес</th><td>менее 18,5</td><td>менее 22</td><td>меньше или равен 23</td></tr>
+                    <tr><th>Нормальный вес</th><td>от 18,5 до 24,9</td><td>от 22 до 26,9</td><td>от 23.01 до 27.9</td></tr>
+                    <tr><th>Избыточный вес</th><td>от 25 до 29,9</td><td>от 27 до 29,9</td><td>от 28 до 29,9</td></tr>
+                    <tr><th>Ожирение</th><td>от 30 и выше</td><td>от 30 и выше</td><td>от 30 и выше</td></tr>
+                </table>
+            </div>
+            <div class="col col-md-3  col-lg-3">
+                <p>Реклама от наших партнеров:</p>
+                <img class="right_img" src="img/pic_health.jpg" alt="Health">
+            </div>
+        </div>
+        <div class="row content_divider"></div>
+        <div class="row">
+            <div class="col col-md-4  col-lg-4">
+                <p>&copy; Принципы здорового образа жизни 2021</p>
+            </div>
+            <div class="col col-md-4 col-lg-4">
+                <p>Полезные рекомендации и сервисы о мире долгой и здоровой жини для вас - просто, понятно, подтверждено наукой.</p>
+            </div>
+            <div class="col col-md-4  col-lg-4">
+                <ul class="menu_footer">
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="food.html">Питание</a></li>
+                    <li><a href="calculator_imt.html">Калькулятор ИМТ</a></li>               
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

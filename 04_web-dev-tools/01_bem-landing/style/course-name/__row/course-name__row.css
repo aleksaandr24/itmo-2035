@@ -1,0 +1,7 @@
+.course-name__row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 54px;
+    width: 667px;
+}

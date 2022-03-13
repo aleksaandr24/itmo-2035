@@ -1,0 +1,13 @@
+.header__title {
+    font-family: "helveticaneuecyr-light";
+    font-weight: 600;
+    font-size: 15px;
+    text-align: left;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    line-height: 21px;
+    width: 274px;
+    padding-left: 105px;
+    padding-top: 22px;
+}

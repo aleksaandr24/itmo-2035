@@ -1,0 +1,16 @@
+.course-name__col {
+    width: auto;
+    color: #FEFEFE;
+}
+
+.course-name__col_text-first {
+    font-family: "helveticaneuecyr-light";
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+.course-name__col_text-second {
+    font-family: "helveticaneuecyr-medium";
+    font-size: 24px;
+    padding-top: 10px;
+}

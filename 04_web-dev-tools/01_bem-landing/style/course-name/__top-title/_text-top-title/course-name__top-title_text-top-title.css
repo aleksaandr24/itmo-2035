@@ -1,0 +1,8 @@
+.course-name__top-title_text-top-title {
+    font-family: "helveticaneuecyr-medium";
+    color: #C93555;
+    font-size: 24px;
+    letter-spacing: -1px;
+    padding-top: 10px;
+    border-top: #C93555 10px solid;
+}

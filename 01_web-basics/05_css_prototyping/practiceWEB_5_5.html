@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">    
+    <title>Практическая работа 5.5</title>
+    <style>
+        body, html {
+            padding: 0;
+            margin: 0;
+            height: 100%;
+            background-color: teal;
+        }
+
+        .container {
+            width: 950px;
+            position: relative;
+            height: 100%;
+            margin: 0 auto;
+            background-color: #ccc;
+        }
+
+        aside.rightSide {
+            width: 200px;
+            float: right;
+        }
+
+        aside.rightSide ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 15px;
+        }
+
+        aside.rightSide ul > li > a {
+            text-decoration: none;
+            color: black;
+            font-size: 18px;
+            border: 1px solid #fefefe;
+            display: block;
+            padding: 15px 30px;
+            text-align: center;
+        }
+
+        aside.rightSide ul > li > a:hover {
+            font-weight: bold;
+            background-color: teal;
+            color: #fefefe;
+            font-size: 18px;
+        }
+
+        article {
+            width: 748px;
+            height: auto;
+            float: left;
+            border-left: 1px solid #fefefe;
+            border-right: 1px solid #fefefe;
+            counter-reset: list 0;
+            padding-bottom: 15px;
+        }
+
+        section {
+            margin-bottom: 72px;
+            padding-left: 15px;
+            padding-right: 30px;
+        }
+
+        section:first-child > h3 {
+            margin-top: 0;
+            padding-top: 30px;
+        }
+
+        section > h3 > span:before {
+            counter-increment: list;
+            content: "Статья " counter(list) ": ";
+        }
+
+        section a {
+            text-align: center;
+            float: right;
+            display: inline-block;
+            background-color: red;
+            padding: 10px 18px;
+            color: #fff;
+            text-decoration: none;
+        }
+
+        main {
+            min-height: 100%;
+            background-color: #ccc;
+        }
+
+        .clearing {
+            height: 200px;
+            clear: both;
+        }
+
+        footer {
+            border-top: 5px solid blue;
+            width: 950px;
+            height: 195px;
+            margin-top: -200px;
+        }
+
+        .firstMenu, .rightMenu, .centerMenu {
+            display: block;
+            padding-top: 25px;
+        }
+
+        .firstMenu {
+            float: left;
+            width: 250px;
+            margin-left: 50px;
+        }
+
+        .rightMenu {
+            float: right;
+            width: 250px;
+            margin-right: 50px;
+        }
+
+        .centerMenu {
+            margin: 0 0 0 50px;
+            float: left;
+        }
+
+        footer nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        footer nav ul a {
+            text-decoration: none;
+            color: black;
+        }
+
+        footer nav ul a:hover {
+            text-decoration: underline;
+        }
+
+        footer nav p {
+            font-weight: bold;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <main>
+            <article>
+                <section>
+                    <h3><span class="counter"></span>Наша статья</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed 
+                    do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim 
+                    ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut 
+                    aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit 
+                    in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur 
+                    sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt 
+                    mollit anim id est laborum.</p>
+                    <a href="#">Подробнее</a>
+                </section>
+                <section>
+                    <h3><span class="counter"></span>Наша статья</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed 
+                    do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim 
+                    ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut 
+                    aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit 
+                    in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur 
+                    sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt 
+                    mollit anim id est laborum.</p>
+                    <a href="#">Подробнее</a>
+                </section>
+                <section>
+                    <h3><span class="counter"></span>Наша статья</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed 
+                    do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim 
+                    ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut 
+                    aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit 
+                    in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur 
+                    sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt 
+                    mollit anim id est laborum.</p>
+                    <a href="#">Подробнее</a>
+                </section>
+                <section>
+                    <h3><span class="counter"></span>Наша статья</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed 
+                    do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim 
+                    ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut 
+                    aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit 
+                    in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur 
+                    sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt 
+                    mollit anim id est laborum.</p>
+                    <a href="#">Подробнее</a>
+                </section>
+            </article>
+            <aside class="rightSide">
+                <ul>
+                    <li><a href="#">Главная</a></li>
+                    <li><a href="#">Новости</a></li>
+                    <li><a href="#">Фото</a></li>
+                    <li><a href="#">Видео</a></li>
+                    <li><a href="#">Контакты</a></li>
+                </ul>
+            </aside>
+            <div class="clearing"></div>
+        </main>
+        <footer>
+            <nav class="firstMenu">
+                <p>Информация о компании</p>
+                <ul>
+                    <li><a href="#">Главная</a></li>
+                    <li><a href="#">О нас</a></li>
+                    <li><a href="#">Блог</a></li>
+                    <li><a href="#">Видеотека</a></li>
+                    <li><a href="#">Контакты</a></li>
+                </ul>
+            </nav>
+            <nav class="centerMenu">
+                <p>Магазин</p>
+                <ul>
+                    <li><a href="#">Главная</a></li>
+                    <li><a href="#">Смартфоны</a></li>
+                    <li><a href="#">Планшеты</a></li>
+                    <li><a href="#">Ноутбуки</a></li>
+                    <li><a href="#">Десктоп</a></li>
+                </ul>
+            </nav>
+            <nav class="rightMenu">
+                <p>Мой аккаунт</p>
+                <ul>
+                    <li><a href="#">Личный кабинет</a></li>
+                    <li><a href="#">Мои заказы</a></li>
+                    <li><a href="#">Сообщения</a></li>
+                    <li><a href="#">Настройки</a></li>
+                    <li><a href="#">Выйти</a></li>
+                </ul>
+            </nav>
+        </footer>
+    </div>
+</body>
+</html>

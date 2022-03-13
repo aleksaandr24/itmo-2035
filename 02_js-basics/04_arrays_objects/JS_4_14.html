@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Самостоятельная работа 4.13</title>
+</head>
+<body>
+    <script>
+        {
+            "use strict";
+            
+            let EmailAddress = "stanislav_sivin@mail.ru";
+
+            getSubstring = (str, start, end) => {
+                return str.substr(start, end);
+            }
+
+            let result = getSubstring(EmailAddress, EmailAddress.indexOf("@") + 1, EmailAddress.length);
+            alert(result); // Выводит mail.ru
+        }
+    </script>
+</body>
+</html>

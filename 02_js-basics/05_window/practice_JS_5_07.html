@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Практическая работа 5.7</title>    
+</head>
+<body>
+    <input type="button" value="Открыть" onclick="openWindow()">
+    <br><br>
+    <input type="button" value="Смещение по Х" onclick="moveByX()">
+    <br><br>
+    <input type="button" value="Смещение по У" onclick="moveByY()">
+    <script>
+        {
+            "use strict";
+            
+            let newWindow;
+            openWindow = () => {
+                newWindow = window.open(",", 'height=200,width=300')
+            }
+            moveByX = () => {
+                newWindow.moveBy(10, 0);
+            }
+            moveByY = () => {
+                newWindow.moveBy(0, 10);
+            }
+        }
+    </script>
+</body>
+</html>

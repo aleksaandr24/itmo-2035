@@ -1,0 +1,10 @@
+.about-course__button-link, .about-course__button-link:visited {
+    font-family: "helveticaneuecyr-heavy";
+    color: #FFFFFF;
+    text-decoration: none;
+    font-size: 30px;
+    text-transform: uppercase;
+    text-align: center;
+    padding-top: 38px;
+    padding-left: 8px;
+}

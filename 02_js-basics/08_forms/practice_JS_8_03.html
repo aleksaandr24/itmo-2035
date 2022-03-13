@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Практическая работа 8.3</title>
+</head>
+<body>
+    <form name="contact" action="#" method="post">
+        <p>
+            Имя: <input type="text" name="formName" onchange="highlight(this);"><br>
+            Фамилия: <input type="text" name="formLastname" onchange="highlight(this);"><br>
+            Email: <input type="text" name="formEmail" onchange="highlight(this);"><br>
+            <input name="submit" value="Submit" type="submit">
+            <input name="reset" value="Reset" type="reset">
+        </p>
+    </form>
+    <script>
+        {
+            "use strict";
+
+            function highlight(element) {
+                element.style.color = "blue";
+                element.style.backgroundColor = "silver";
+                element.style.borderStyle = "solid";
+                element.style.borderColor = "red";
+            }
+        }
+    </script>
+</body>
+</html>

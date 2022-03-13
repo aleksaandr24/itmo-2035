@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Самостоятельная работа 2.5</title>    
+</head>
+<body>
+    <script>
+        {
+            "use strict";
+            let beforeArr = [], afterArr = [];
+            let i = 0, j = 0;
+            do {
+                beforeArr.push(++i);                
+            } while (i < 5);
+            console.log(`beforeArr = [${beforeArr}]`);
+            /*
+                После выполнения цикла 5 раз значения массива будут:
+                beforeArr = [1,2,3,4,5]
+                Так как в префиксной форме сначала выполняется инкремент, затем возвращается значение
+            */
+            do {
+                afterArr.push(j++);                
+            } while (j < 5);            
+            console.log(`afterArr = [${afterArr}]`);
+            /*
+                После выполнения цикла 5 раз значения массива будут:
+                afterArr = [0,1,2,3,4]
+                Так как в постфиксной форме сначала возвращается значение, затем выполняется инкремент
+            */
+        }        
+    </script>
+</body>
+</html>

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+    <title>Самостоятельная работа 7.4</title>
+</head>
+<body onload="getCookies();">
+    <div>
+        <label>Логин:<br><input type="text" placeholder="Введите логин" id="login"></label><br>
+        <label>Пароль:<br><input type="text" placeholder="Введите пароль" id="password"></label><br>
+        <button type="button" class="logIn" onclick="login()">Войти</button>
+    </div>
+    <p class="saveCookie"></p>
+    <script defer src="https://cdn.jsdelivr.net/npm/js-cookie@3.0.1/dist/js.cookie.min.js"></script>
+    <script defer src="JS_7_04.js"></script>
+</body>
+</html>

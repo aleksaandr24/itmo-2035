@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Самостоятельная работа 7.3</title>
+</head>
+<body>
+    <script>
+        {
+            "use strict";
+
+            let name1 = "login";
+            let value1 = "stanislav";
+            let name2 = "password";
+            let value2 = "pass";
+            let name3 = "domain";
+            let value3 = "localhost";            
+            document.cookie = encodeURIComponent(name1) + "=" + encodeURIComponent(value1);
+            document.cookie = encodeURIComponent(name2) + "=" + encodeURIComponent(value2);
+            document.cookie = encodeURIComponent(name3) + "=" + encodeURIComponent(value3);
+            console.log(document.cookie);
+
+            let getCookies = () => {
+                let resultArray = [];
+                let cookiesArray = document.cookie.split("; ");
+                cookiesArray.forEach(cookie => {
+                    keyValueArray = cookie.split("=");
+                    resultArray.push({name: keyValueArray[0], value: keyValueArray[1]});
+                });
+                return resultArray;
+            }
+
+            console.log(getCookies());
+        }
+    </script>
+</body>
+</html>

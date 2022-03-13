@@ -1,0 +1,40 @@
+@import url("./button/button.css");
+@import url("./header/header.css");
+@import url("./course-name/course-name.css");
+@import url("./about-prof/about-prof.css");
+@import url("./about-course/about-course.css");
+@import url("./footer/footer.css");
+
+
+@font-face {
+    font-family: "helveticaneuecyr-thin";
+    src: url("../fonts/helveticaneuecyr-thin.ttf");
+}
+
+@font-face {
+    font-family: "helveticaneuecyr-light";
+    src: url("../fonts/helveticaneuecyr-light.ttf");
+}
+
+@font-face {
+    font-family: "helveticaneuecyr-medium";
+    src: url("../fonts/helveticaneuecyr-medium.ttf");
+}
+
+@font-face {
+    font-family: "helveticaneuecyr-bold";
+    src: url("../fonts/helveticaneuecyr-bold.ttf");
+}
+
+@font-face {
+    font-family: "helveticaneuecyr-heavy";
+    src: url("../fonts/helveticaneuecyr-heavy.ttf");
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 1920px;
+    height: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+}

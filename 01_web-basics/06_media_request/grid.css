@@ -1,0 +1,304 @@
+* {
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    background-color: #D9F5B7;
+}
+
+.col {
+    float: left;
+    padding-left: 15px;
+    padding-right: 15px; 
+    
+    /* outline: 1px solid black;  */
+}
+
+.row:after {
+    content: " ";
+    display: table;
+    clear: both;
+}
+
+.row {
+    margin-left: -15px;
+    margin-right: -15px;
+}
+
+.container {
+    margin: 0 auto;
+    margin-top: 5px;
+    padding: 15px;    
+}
+
+.col-12 {
+    width: 100%;
+}
+.col-11 {
+    width: 91.66666667%;
+}
+.col-10 {
+    width: 83.33333333%;
+}
+.col-9 {
+    width: 75%;
+}
+.col-8 {
+    width: 66.66666667%;
+}
+.col-7 {
+    width: 58.33333333%;
+}
+.col-6 {
+    width: 50%;
+}
+.col-5 {
+    width: 41.66666667%;
+}
+.col-4 {
+    width: 33.33333333%;
+}
+.col-3 {
+    width: 25%;
+}
+.col-2 {
+    width: 16.66666667%;
+}
+.col-1 {
+    width: 8.33333333%;
+}
+
+
+@media (min-width: 768px) {
+.container {
+    width: 750px;
+}
+.col-sm-12 {
+    width: 100%;
+}
+.col-sm-11 {
+    width: 91.66666667%;
+}
+.col-sm-10 {
+    width: 83.33333333%;
+}
+.col-sm-9 {
+    width: 75%;
+}
+.col-sm-8 {
+    width: 66.66666667%;
+}
+.col-sm-7 {
+    width: 58.33333333%;
+}
+.col-sm-6 {
+    width: 50%;
+}
+.col-sm-5 {
+    width: 41.66666667%;
+}
+.col-sm-4 {
+    width: 33.33333333%;
+}
+.col-sm-3 {
+    width: 25%;
+}
+.col-sm-2 {
+    width: 16.66666667%;
+}
+.col-sm-1 {
+    width: 8.33333333%;    
+}
+}
+@media (min-width: 992px) {
+.container {
+    width: 970px;
+}
+.col-md-12 {
+    width: 100%;
+}
+.col-md-11 {
+    width: 91.66666667%;
+}
+.col-md-10 {
+    width: 83.33333333%;
+}
+.col-md-9 {
+    width: 75%;
+}
+.col-md-8 {
+    width: 66.66666667%;
+}
+.col-md-7 {
+    width: 58.33333333%;
+}
+.col-md-6 {
+    width: 50%;
+}
+.col-md-5 {
+    width: 41.66666667%;
+}
+.col-md-4 {
+    width: 33.33333333%;
+}
+.col-md-3 {
+    width: 25%;
+}
+.col-md-2 {
+    width: 16.66666667%;
+}
+.col-md-1 {
+    width: 8.33333333%;
+}
+}
+@media (min-width: 1200px) {
+.container {
+    width: 1170px;
+}
+.col-lg-12 {
+    width: 100%;
+}
+.col-lg-11 {
+    width: 91.66666667%;
+}
+.col-lg-10 {
+    width: 83.33333333%;
+}
+.col-lg-9 {
+    width: 75%;
+}
+.col-lg-8 {
+    width: 66.66666667%;
+}
+.col-lg-7 {
+    width: 58.33333333%;
+}
+.col-lg-6 {
+    width: 50%;
+}
+.col-lg-5 {
+    width: 41.66666667%;
+}
+.col-lg-4 {
+    width: 33.33333333%;
+}
+.col-lg-3 {
+    width: 25%;
+}
+.col-lg-2 {
+    width: 16.66666667%;
+}
+.col-lg-1 {
+    width: 8.33333333%;
+}
+}
+
+.header {    
+    font-size: 36pt;
+    text-transform: uppercase;    
+    text-align: left;
+    font-weight: bold;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-image: url("img/Healthy-Lifestyle.jpg");
+    background-size: cover;  
+}
+
+h3 {
+    text-align: left;
+    font-weight: normal;
+
+}
+
+.latest_articles_img {
+    height: 100px;
+    float: left;
+    margin-right: 10px;
+}
+
+.latest_articles_link {
+    text-decoration: none;
+    color: black;    
+}
+
+.latest_articles_link:hover {
+    text-decoration: underline;
+    color: #F07427;    
+}
+
+ul.menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+ul.menu > li {
+    display: inline-block;
+    padding: 15px 30px;    
+}
+
+ul.menu > li > a {
+    text-decoration: none;
+    color: black;    
+}
+
+ul.menu > li > a:hover {
+    text-decoration: none;
+    color: #F07427;
+}
+
+ul.menu_header {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;    
+}
+
+ul.menu_header > li {
+    display: inline-block;
+    padding: 10px 10px;    
+}
+
+ul.menu_header > li > a {
+    text-decoration: underline;
+    color: black;
+}
+
+ul.menu_header > li > a:hover {
+    text-decoration: underline;
+    color: #F07427;
+}
+
+ul.menu_footer {
+    list-style-type: none;        
+}
+
+ul.menu_footer > li {
+    display: block;
+    padding: 5px;
+}
+
+ul.menu_footer > li > a {
+    text-decoration: underline;
+    color: black; 
+}
+
+ul.menu_footer > li > a:hover {
+    text-decoration: underline;
+    color: #F07427;
+}
+
+.recent_articles {
+    border-top: 3px dashed black;    
+}
+
+.content_divider {
+    height: 20px;
+    border-top: 1px dashed #507D2A;
+}

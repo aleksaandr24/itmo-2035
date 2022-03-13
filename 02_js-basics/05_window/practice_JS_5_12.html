@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Практическая работа 5.12</title>    
+</head>
+<body onload="showDate()">
+    <p>Текущая дата - <b id="date"></b></p>    
+    <script>
+        {
+            "use strict";
+            
+            showDate = () => {
+                let timeNow = new Date();
+                let hoursNow = timeNow.getHours();
+                let minutesNow = timeNow.getMinutes();
+                let message = "Сейчас ";
+                let hoursText;
+                if (minutesNow <= 30) {
+                    message += minutesNow + " минут ";
+                    hoursText = hoursNow + 1;
+                } else {
+                    message += "без " + (60 - minutesNow) + " минут";
+                    hoursText = hoursNow + 1;
+                }
+                if (hoursNow == 0 && minutesNow <= 30) {
+                    message += "после полуночи";
+                } else if (hoursNow == 11 && minutesNow > 30) {
+                    message += "полдень";
+                } else if (hoursNow < 12) {
+                    message += hoursText + " до обеда";
+                } else if (hoursNow == 12 && minutesNow <= 30) {
+                    message += "после полудня";
+                } else if (hoursNow < 18) {
+                    message += parseInt(hoursText - 12) + " пополудни";
+                } else if (hoursNow == 23 && minutesNow > 30) {
+                    message += "полночь";
+                } else {
+                    message += parseInt(hoursText - 12) + " вечера";
+                }
+                document.querySelector("#date").innerHTML = message;
+            }
+        }
+    </script>
+</body>
+</html>

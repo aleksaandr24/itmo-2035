@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Практическая работа 5.14</title>    
+</head>
+<body>
+    
+    <script>
+        {
+            "use strict";
+            
+            monthName = (monthValue) => {
+                switch (monthValue) {
+                    case 0: return "Январь";
+                    case 1: return "Февраль";
+                    case 2: return "Март";
+                    case 3: return "Апрель";
+                    case 4: return "Май";
+                    case 5: return "Июнь";
+                    case 6: return "Июль";
+                    case 7: return "Август";
+                    case 8: return "Сентябрь";
+                    case 9: return "Октябрь";
+                    case 10: return "Ноябрь";
+                    case 11: return "Декабрь";                    
+                }
+            }
+
+            dateNow = new Date(2001, 7, 23);
+            monthNow = dateNow.getMonth();
+            document.write("месяц " + monthName(monthNow));
+        }
+    </script>
+</body>
+</html>

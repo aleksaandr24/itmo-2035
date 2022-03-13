@@ -1,0 +1,11 @@
+.lighter {
+    font-weight: lighter;
+}
+
+.bolder {
+    font-weight: bolder;
+}
+
+p i {
+    font-weight: bold;
+}

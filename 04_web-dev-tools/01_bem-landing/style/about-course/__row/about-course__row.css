@@ -1,0 +1,14 @@
+.about-course__row {
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.about-course__col-1 {
+    width: 575px;
+}
+
+.about-course__col-2 {
+    padding-left: 75px;
+    padding-top: 10px;
+}

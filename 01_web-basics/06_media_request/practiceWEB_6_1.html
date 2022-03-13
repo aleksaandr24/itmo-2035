@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<title>Практическое задание 6.1</title>
+	<meta charset="utf-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type="text/css">
+        body, html {
+            height: 100%;
+            background-color: #ccc;
+        }
+
+        i:before {
+            font-size: 145px;
+            text-align: center;
+            margin-top: 140px;
+            content: "Screen";
+            color: #fff;
+            display: block;
+        }
+
+        @media screen and (max-width: 1024px) and (min-width: 769px) {
+            body, html {
+                height: 100%;
+                background-color: #000;
+            }
+
+            i:before {
+                content: "Laptop";
+            }
+        }
+
+        @media screen and (max-width: 320px) {
+            body, html {
+                height: 100%;
+                background-color: red;
+            }
+
+            i:before {
+                content: "Mobile";
+            }
+        }
+
+        @media screen and (max-width: 768px) and (min-width: 321px) {
+            body, html {
+                height: 100%;
+                background-color: lime;
+            }
+
+            i:before {
+                content: "Tablet";
+            }
+        }
+    </style>	
+</head>
+<body>
+    <i></i>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Самостоятельная работа 3.4</title>    
+    <style>
+        h1 {
+            color: #ff0000;
+            font-size: 18px;
+            text-decoration: underline;
+        }
+    </style>    
+</head>
+<body>
+    <h1 id="newW"></h1>
+    <h6 id="date">11 января 2011 года</h6>
+    <p><span>Введите старую зарплату</span><input type="text" name="old" id="oldW"></p>
+    <p><span>Введите коэффициент повышения зарплаты</span><input type="text" name="coefficient" id="coefficientW"></p>
+    <!-- Внесены следующие изменения:
+        указали = между событием onclick и именем вызываеой функции Wages() и () после имени функции 
+        для корректной обработки события нажатия кнопки -->
+    <input type="submit" onclick="Wages()" value="Рассчитать">
+    <script>
+        {    
+            "use strict";
+            /* внесены следующие изменения */
+            function multiplication(a, b) {
+                return a * b;
+            }
+                    
+            function Wages() {
+                /* указали корректное имя переменной oldWages, передаваемой ниже в качестве аргумента в multiplication() */
+                /* указали второй аргумент radix функции parseInt() 10 вместо 8 для получения значения в десятичной системе
+                для правильного вычисления выражения в функции Wages() */
+                let oldWages = parseInt(document.getElementById("oldW").value, 10);
+                let coefficientWages = parseInt(document.getElementById("coefficientW").value, 10);
+                /* указали правильное ключевое слово let для корректного объявления переменной */            
+                /* аргументы вызываемой функции multiplication перечислили через запятую */
+                let newWages = multiplication(oldWages, coefficientWages);
+                /* указали правильное ключевое слово let для корректного объявления переменной */
+                let date = document.getElementById("date").innerHTML;
+                document.getElementById("newW").innerHTML = "Ваша новая зарплата " + newWages + " рублей. " + date;
+            }
+        }
+    </script>    
+</body>
+</html>

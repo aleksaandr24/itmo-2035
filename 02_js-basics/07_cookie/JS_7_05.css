@@ -1,0 +1,30 @@
+.formAuth, .greetings {
+    padding: 16px;
+}
+
+.greetings {
+    display: none;
+}
+
+.formAuth {
+    display: block;
+}
+
+.greetings p span {
+    color: red;
+    font-weight: bold;
+}
+
+.formAuth label {
+    font-size: 18px;
+}
+
+.formAuth input[type="text"], input[type="password"] {
+    font-size: 16px;
+    margin: 10px 0px;
+}
+
+.formAuth button {
+    font-size: 16px;
+    padding: 7px 10px;
+}

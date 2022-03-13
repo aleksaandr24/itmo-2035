@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Самостоятельная работа 2.4</title>    
+</head>
+<body>
+    <script>
+        {
+            "use strict";
+            let arrOfNumbers = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+            let tmp = prompt("Введите число:", "0");
+            let tmpNumber = parseInt(tmp, 10);            
+            if (Number.isInteger(tmpNumber)) {
+                let i = 0;
+                while (i < arrOfNumbers.length) {
+                    arrOfNumbers[i] = arrOfNumbers[i] * tmpNumber;
+                    i++;
+                }
+                document.write(`arrOfNumbers * ${tmpNumber} = [${arrOfNumbers}]`);
+            } else {
+                document.write("Введено не число");
+            }
+        }
+    </script>
+</body>
+</html>

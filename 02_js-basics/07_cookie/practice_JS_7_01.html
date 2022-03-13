@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Практическая работа 7.1</title>
+</head>
+<body>
+    <input type="text" name="usernametext"><br>
+    <input type="text" name="username2text"><br>
+    <input type="submit" name="Submit" value="Submit" onclick="submit();"><br><br>
+    <div style="width: 250px; height: 100px; background-color: #009966; color: #fff;">
+    <script src="cookies.js"></script>
+    <script>
+        {
+            "use strict";
+
+            let username;
+            username = getcookie("user");
+            document.write("Cookie 1 " + username + "<br>");
+            username = getcookie("user2");
+            document.write("Cookie 2 " + username + "<br>");
+            username = getcookie("user3");
+            document.write("Cookie 3 " + username + "<br>");
+        }
+    </script>
+    </div><br><br>
+    <a href="practice_JS_7_01_result.html">Read Cookies in new tab</a>    
+    <script>
+        {
+            "use strict";
+            
+            if (navigator.cookieEnabled == true) {
+                alert("Cookies Enabled");
+            } else {
+                alert("Enable cookies!");
+            }
+
+            function submit() {
+                setcookie("user", document.all.usernametext.value, 365 * 24 * 3600 * 1000);
+                setcookie("user2", document.all.username2text.value, 365 * 24 * 3600 * 1000);
+                setcookie("user3", "Заданное значение", 365 * 24 * 3600 * 1000);
+                location.reload();
+            }
+        }
+    </script>
+</body>
+</html>

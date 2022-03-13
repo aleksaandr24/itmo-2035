@@ -1,0 +1,23 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+html {
+    padding: 50px;
+    background-color: black;
+}
+
+.text {
+    font-size: 145px;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: bold;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-image: url("img-practice/havana.jpg");
+    background-size: cover;
+    background-position-x: -110px;
+    background-position-y: 490px;
+}

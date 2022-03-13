@@ -1,0 +1,48 @@
+/* стиль страницы */
+body {
+    background-color: #cecece; /* определить цвет фона страницы */
+    padding: 0px; /* определить внутренние отступы на странице */
+}
+
+/* общий стиль для всех блоков */
+div { 
+    width: 40px; /* ширина, высота, относительное позиционирование, положение слева в пикселах*/
+    height: 40px; 
+    position: relative;
+    left: 10px;
+    transition: 1s; /* определить временной интервал применения свойства при помощи css-перехода */      
+}
+
+.container {
+    width: 100%; /* определить размеры блока container в %*/
+    height: 100%;
+}
+
+.container:hover div {
+    left: 500px; /* изменение положения слева для внутренних блоков */
+}
+
+.ease {
+    background-color: blue; /* определить цвет фона */
+    transition-timing-function: ease; /* установить скорость изменения стилевого свойства медленно-быстро-медленно */
+}
+
+.linear {
+    background-color: lime; /* определить цвет фона */
+    transition-timing-function: linear; /* установить скорость изменения стилевого свойства равномерно */
+}
+
+.ease-in {
+    background-color: mediumseagreen; /* определить цвет фона */
+    transition-timing-function: ease-in; /* установить скорость изменения стилевого свойства медленно-быстро */
+}
+
+.ease-out {
+    background-color: orangered; /* определить цвет фона */
+    transition-timing-function: ease-out; /* установить скорость изменения стилевого свойства быстро-медленно */
+}
+
+.ease-in-out {
+    background-color: darkviolet; /* определить цвет фона */
+    transition-timing-function: ease-in-out; /* установить скорость изменения стилевого свойства выраженное медленно-быстро-медленно */
+}

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Практическая работа 4.2</title>    
+</head>
+<script>
+    {
+        "use strict";
+        let workbook = new Object();
+        workbook.title = "Основы создания Web-узлов [JavaScript]";
+        workbook.chapter1 = new Object();
+        workbook.chapter1.title = "Введение в JavaScript";
+        workbook.chapter1.pages = 11;
+        workbook.chapter2 = {title: "Переменные, операторы и выражения", pages: 6};
+        document.write("<h2>Курс: " + workbook.title + "</h2><br>"
+                        +
+                        "<h3>Тема 1. " + workbook.chapter1.title + ". Страниц: " + workbook.chapter1.pages + "</h3>"
+                        +
+                        "<h3>Тема 2. " + workbook.chapter2.title + ". Страниц: " + workbook.chapter2.pages + "</h3>");
+        if ((typeof workbook == "object") && (workbook.constructor == Date)) {
+            alert("Объект workbook является Датой");            
+        }
+        else {
+            alert("Объект workbook не является Датой");            
+        }
+        let date = new Date();
+        if ((typeof date == "object") && (date.constructor == Date)) {
+            alert("Объект date является Датой");            
+        }
+        else {
+            alert("Объект date не является Датой");            
+        }
+    }
+</script>
+<body>
+    
+</body>
+</html>

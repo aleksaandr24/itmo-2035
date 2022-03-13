@@ -1,0 +1,423 @@
+* {
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    background-color: #D9F5B7;
+}
+
+.col {
+    float: left;
+    padding-left: 15px;
+    padding-right: 15px; 
+    
+    /* outline: 1px solid black;  */
+}
+
+.row:after {
+    content: " ";
+    display: table;
+    clear: both;
+}
+
+.row {
+    margin-left: -15px;
+    margin-right: -15px;
+}
+
+.container {
+    margin: 0 auto;
+    margin-top: 5px;
+    padding: 15px;    
+}
+
+.col-12 {
+    width: 100%;
+}
+.col-11 {
+    width: 91.66666667%;
+}
+.col-10 {
+    width: 83.33333333%;
+}
+.col-9 {
+    width: 75%;
+}
+.col-8 {
+    width: 66.66666667%;
+}
+.col-7 {
+    width: 58.33333333%;
+}
+.col-6 {
+    width: 50%;
+}
+.col-5 {
+    width: 41.66666667%;
+}
+.col-4 {
+    width: 33.33333333%;
+}
+.col-3 {
+    width: 25%;
+}
+.col-2 {
+    width: 16.66666667%;
+}
+.col-1 {
+    width: 8.33333333%;
+}
+
+
+@media (min-width: 768px) {
+.container {
+    width: 750px;
+}
+.col-sm-12 {
+    width: 100%;
+}
+.col-sm-11 {
+    width: 91.66666667%;
+}
+.col-sm-10 {
+    width: 83.33333333%;
+}
+.col-sm-9 {
+    width: 75%;
+}
+.col-sm-8 {
+    width: 66.66666667%;
+}
+.col-sm-7 {
+    width: 58.33333333%;
+}
+.col-sm-6 {
+    width: 50%;
+}
+.col-sm-5 {
+    width: 41.66666667%;
+}
+.col-sm-4 {
+    width: 33.33333333%;
+}
+.col-sm-3 {
+    width: 25%;
+}
+.col-sm-2 {
+    width: 16.66666667%;
+}
+.col-sm-1 {
+    width: 8.33333333%;    
+}
+}
+@media (min-width: 992px) {
+.container {
+    width: 970px;
+}
+.col-md-12 {
+    width: 100%;
+}
+.col-md-11 {
+    width: 91.66666667%;
+}
+.col-md-10 {
+    width: 83.33333333%;
+}
+.col-md-9 {
+    width: 75%;
+}
+.col-md-8 {
+    width: 66.66666667%;
+}
+.col-md-7 {
+    width: 58.33333333%;
+}
+.col-md-6 {
+    width: 50%;
+}
+.col-md-5 {
+    width: 41.66666667%;
+}
+.col-md-4 {
+    width: 33.33333333%;
+}
+.col-md-3 {
+    width: 25%;
+}
+.col-md-2 {
+    width: 16.66666667%;
+}
+.col-md-1 {
+    width: 8.33333333%;
+}
+}
+@media (min-width: 1200px) {
+.container {
+    width: 1170px;
+}
+.col-lg-12 {
+    width: 100%;
+}
+.col-lg-11 {
+    width: 91.66666667%;
+}
+.col-lg-10 {
+    width: 83.33333333%;
+}
+.col-lg-9 {
+    width: 75%;
+}
+.col-lg-8 {
+    width: 66.66666667%;
+}
+.col-lg-7 {
+    width: 58.33333333%;
+}
+.col-lg-6 {
+    width: 50%;
+}
+.col-lg-5 {
+    width: 41.66666667%;
+}
+.col-lg-4 {
+    width: 33.33333333%;
+}
+.col-lg-3 {
+    width: 25%;
+}
+.col-lg-2 {
+    width: 16.66666667%;
+}
+.col-lg-1 {
+    width: 8.33333333%;
+}
+}
+
+.header__name {    
+    font-size: 36pt;
+    text-transform: uppercase;    
+    text-align: left;
+    font-weight: bold;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    background-image: url("img/Healthy-Lifestyle.jpg");
+    background-size: cover;     
+}
+
+.header__name__i {
+    font-size: 72pt;
+    margin-right: 20px;
+}
+
+.header__quote {
+    font-size: 11pt;
+    font-style: italic;
+    color: rgba(37, 37, 37, 0.692);
+    text-align: right;
+}
+
+h3 {
+    text-align: left;
+    font-weight: bold;
+    margin: 30px 0;
+
+}
+
+iframe {
+    margin: 20px 0;
+    width: 100%;
+    height: 350px;
+}
+
+@keyframes blur {
+    from {
+        text-shadow:0px 0px 10px #fff,
+        0px 0px 10px #fff, 
+        0px 0px 25px #fff,
+        0px 0px 25px #fff,
+        0px 0px 25px #fff,
+        0px 0px 25px #fff,
+        0px 0px 25px #fff,
+        0px 0px 25px #fff,
+        0px 0px 50px #fff,
+        0px 0px 50px #fff,
+        0px 0px 50px #7B96B8,
+        0px 0px 150px #7B96B8,
+        0px 10px 100px #7B96B8,
+        0px 10px 100px #7B96B8,
+        0px 10px 100px #7B96B8,
+        0px 10px 100px #7B96B8,
+        0px -10px 100px #7B96B8,
+        0px -10px 100px #7B96B8;
+    }
+}
+
+.simple_rools__animation {
+    text-align: center;
+    font-size: 2.5em;
+    color: #619719;
+    letter-spacing: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+    animation: blur .75s ease-out 3;
+    text-shadow: 0px 0px 5px #fff, 0px 0px 7px #fff;
+}
+
+.animation_share_button:hover {
+    outline: 1px solid #fff;
+    transform: scale(1.2, 1.2);
+}
+
+.wrap {
+    width: 269px;
+    height: 150px;    
+    display: inline-block;    
+}
+
+.wrap > div {
+    width: 269px;
+    height: 150px;    
+    display: inline-block;
+    position: relative;
+    z-index: 2;
+    transition: transform 1s;
+}
+
+.scaleX:hover {
+    transform: scaleX(-1);    
+}
+
+.simple_rools__img {
+    height: 100px;
+    float: left;
+    margin-right: 10px;
+    border-radius: 10px;
+}
+
+ul.menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+ul.menu > li {
+    display: inline-block;
+    padding: 15px 30px;    
+}
+
+ul.menu > li > a {
+    text-decoration: none;
+    color: black;    
+}
+
+ul.menu > li > a:hover {
+    text-decoration: none;
+    color: #F07427;
+}
+
+ul.menu_footer {
+    list-style-type: none;        
+}
+
+ul.menu_footer > li {
+    display: block;
+    padding: 5px;
+}
+
+ul.menu_footer > li > a {
+    text-decoration: underline;
+    color: black; 
+}
+
+ul.menu_footer > li > a:hover {
+    text-decoration: underline;
+    color: #F07427;
+}
+
+.content_divider {
+    height: 20px;
+    border-top: 1px dashed #507D2A;
+}
+
+.right_img {
+    border-radius: 10px;    
+}
+
+.food__table {
+    table-layout: fixed;
+    border-collapse: collapse;    
+    width: 100%;
+    text-align: center;
+}
+
+.food__table > thead {    
+    color: black;    
+}
+
+.food__table > thead > tr > th:nth-child(1) {
+    width: 70%;
+}
+
+.food__table > thead > tr > th:nth-child(2) {
+    width: 30%;
+}
+
+.food__table > thead > tr > th, .food__table > tbody > tr > td {    
+    padding: 5px;
+    background: linear-gradient(to bottom, rgba(104, 117, 102, 0.05), rgba(94, 168, 116, 0.4));
+    border: 1px solid #125716;
+}
+
+.calc_table {
+    table-layout: fixed;
+    border-collapse: collapse;    
+    border: 0;
+    border-radius: 10px;
+    width: 100%;
+    font-size: 12pt;
+    background: linear-gradient(to bottom, rgba(54, 70, 52, 0.05), rgba(17, 124, 49, 0.4));
+}
+
+.calc_table td:nth-child(1) {
+    width: 35%;
+    padding: 10px;
+}
+
+.calc_table td:nth-child(2) {
+    width: 65%;
+    padding: 10px;
+}
+
+.calc_table input {
+    margin-right: 5px;
+    padding: 3px;
+    font-size: 12pt;
+}
+
+.calc_table output {
+    padding: 3px;
+    font-size: 16pt;
+    color: darkred;
+}
+
+.imt__table {
+    table-layout: fixed;
+    border-collapse: collapse;
+    margin-bottom: 20px;    
+    width: 100%;
+    text-align: center;
+    color: black;
+}
+
+.imt__table > thead > tr > th, .imt__table > tbody > tr > td {    
+    padding: 5px;
+    background: linear-gradient(to bottom, rgba(104, 117, 102, 0.05), rgba(94, 168, 116, 0.4));
+    border: 1px solid #8BC683;
+}

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Самостоятельная работа 3.2</title>    
+    <script>
+        {
+            /* внесены следующие изменения: */
+            "use strict";
+            /* добавили ключевое слово function перед имененем функции для корректного объявления функции */
+            function Wages() {
+                let oldWages = document.getElementById("oldW").value;
+                let coefficientWages = document.getElementById("coefficientW").value;
+                let newWages = oldWages * coefficientWages;
+                /* заменили на правильное имя функции вывода модального окна с сообщением alert()
+                    указали оператор + для корректной конкатенации строки и вывода сообщения  */
+                alert("Ваша новая зарплата " + newWages);
+            }
+        }
+    </script>
+</head>
+<body>
+    Введите старую зарплату:<br>
+    <input type="text" name="old" id="oldW"><br>
+    Введите коэффициент повышения зарплаты:<br>
+    <input type="text" name="coefficient" id="coefficientW"><br>
+    <input type="submit" onclick="Wages()" value="Рассчитать">
+</body>
+</html>

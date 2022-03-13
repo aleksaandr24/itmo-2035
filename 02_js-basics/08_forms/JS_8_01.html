@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Самостоятельная работа 8.1</title>
+</head>
+<body>
+    <form name="contact" action="#" method="post">
+        <p>
+            <label>Имя: <br><input type="text" name="formName"></label><br>
+            <label>Фамилия: <br><input type="text" name="formLastname"></label><br>
+            <label>Email: <br><input type="text" name="formEmail" onblur="checkInputEmail(this.value);"></label><br>
+            <input name="Submit" value="Submit" type="submit">
+            <input name="Reset" value="Reset" type="reset">
+        </p>
+    </form>
+    <script>
+        {
+            "use strict";
+
+            function validateEmail(email) {
+                let location = email.indexOf("@");
+                if (location == -1) {
+                    return false;
+                }
+                return true;
+            }
+
+            function checkInputEmail(emailAddress) {
+                console.log("Введено значение Email: " + emailAddress);
+                validateResult = validateEmail(emailAddress);
+                console.log("Результат проверки validateEmail: " + validateResult);
+                if (validateResult != true) {
+                    alert("Введите Email формат: имя_ящика@платформа");
+                }
+            }
+        }
+    </script>
+</body>
+</html>

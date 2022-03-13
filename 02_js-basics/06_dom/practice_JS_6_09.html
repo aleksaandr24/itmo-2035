@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Практическая работа 6.9</title>    
+</head>
+<body>
+    <ol id="list">
+        <li>Пункт 1</li>
+        <li>Пункт 2</li>
+        <li>Пункт 3</li>
+        <li>Пункт 4</li>
+    </ol>
+    <font id="itemA">as</font><br>    
+    <input type="button" value="Добавить" onclick="addItem();"><br>    
+    <input type="button" value="Добавить к существующему элементу" onclick="addItemAt();"><br>
+    <script>
+        {
+            "use strict";
+            
+            let index = 4;
+
+            function addItem() {
+                let listOfItems = document.getElementById("list");
+                let newLi = document.createElement("li");
+                let newFont = document.createElement("font");
+                newFont.setAttribute("color", "red");
+                newFont.setAttribute("size", "4");
+                index++;
+                let newTextNode = document.createTextNode("Пункт " + index);
+                newFont.appendChild(newTextNode);
+                newLi.appendChild(newFont);
+                listOfItems.appendChild(newLi);
+            }
+
+            function addItemAt() {
+                let itrmG = document.getElementById("itemA");
+                itrmG.setAttribute("color", "green");
+                itrmG.setAttribute("size", "4");
+            }
+            
+        }
+    </script>
+</body>
+</html>

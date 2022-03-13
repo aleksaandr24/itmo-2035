@@ -1,0 +1,63 @@
+/* стиль страницы */
+body {
+    background-color: #cecece; /* определить цвет фона страницы */
+    padding: 32px; /* определить внутренние отступы на странице */
+}
+
+/* общий стиль для всех кнопок */
+button {
+    margin: 25px 15px; /* определить внешние отступы кнопок */
+    border: none; /* убрать внешнюю границу кнопки */
+    border-radius: 5px; /* скруглить углы объекта с помощью радиуса*/
+    border: 1px solid lime; /* определить стиль рамки у кнопок */
+    padding: 15px 35px; /* определить внутренние отступы кнопок */    
+}
+
+/* стиль кнопок при наведении */
+button:hover {
+    outline: 1px solid white; /* определить толщину, стиль и цвет внешней границы с помощью свойства outline*/
+    outline-offset: -2px; /* установить расстояние между границей outline и border внутри элемента (отрицательное значение)*/
+    cursor: pointer; /* определить стиль указателя при наведении */
+}
+
+/* отдельные стили градиента для каждой кнопки */
+
+.button1 {
+    background-image: linear-gradient(#76B9CC, #97CC76); /* линейный градиент сверху-вниз 2 цвета */
+}
+
+.button2 {
+    background-image: linear-gradient(#76B9CC, #CC208A, #97CC76); /* линейный градиент сверху-вниз 3 цвета */
+}
+
+.button3 {
+    background-image: linear-gradient(#76B9CC, #CC208A, #97CC76, #B34EE9); /* линейный градиент сверху-вниз 4 цвета */
+}
+
+.button4 {
+    background-image: linear-gradient(blue 5%, lime 30%, #97CC76 80%, #B34EE9 90%); /* линейный градиент сверху-вниз 4 цвета с указанием точек остановки цветов в % */
+}
+
+.button5 {
+    background-image: linear-gradient(blue 5px, lime 15px, white 30px, black 50px); /* линейный градиент сверху-вниз 4 цвета с указанием точек остановки цветов в пикселах */
+}
+
+.button6 {
+    background-image: linear-gradient(25deg, blue, lime); /* линейный градиент 2 цвета под углом 25 градусов по часовой */
+}
+
+.button7 {
+    background-image: radial-gradient(red 0%, yellow 30%); /* радиальный градиент 2 цвета с расположением точек остановки*/
+}
+
+.button8 {
+    background-image: radial-gradient(at top right, red, yellow); /* радиальный градиент 2 цвета с указанием центром верхнего правого угла */
+}
+
+.button9 {
+    background-image: radial-gradient(farthest-corner at 25% 50%, #F35 0%, #43E 100%); /*  радиальный градиент 2 цвета с указанием расстояния до дальнего угла*/
+}
+
+.button10 {
+    background-image: radial-gradient(15px 15px at 85% 25%, #F35 0%, #43E 100%); /* радиальный градиент 2 цвета с указанием размера и положения пикселами и % */
+}

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Самостоятельная работа 5.2</title>
+</head>
+<body>
+    <script>
+        {
+            "use strict";            
+            
+            function startTimer() {                
+                let firstTimer = window.setTimeout(() => alert("Отработал первый!"), 2000);
+                let secondTimer = window.setTimeout(() => alert("Отработал второй!"), 4000);
+                clearTimeout(firstTimer); // "Отработал первый!" не выведет
+            }
+
+            startTimer();            
+        }
+    </script>
+</body>
+</html>

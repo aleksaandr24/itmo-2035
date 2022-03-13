@@ -1,0 +1,613 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    background-color: #eeeeed;
+}
+
+.headerBackground {
+    background-color: #008DAA;
+}
+
+.header {
+    min-height: 101px;
+    padding-top: 27px;
+}
+
+.header__link, .header__link:visited {
+    color: #D4D2C6;
+    font-size: 24px;
+    text-decoration: underline;
+    font-family: "Roboto", sans-serif;
+}
+
+.header__link:hover {
+    color: #EEEEED;
+}
+
+.header__social {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 20px;
+}
+
+.header__social li {
+    list-style-type: none;
+}
+
+.header__social li:nth-child(1) {
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+.header__social li:nth-child(2) {
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+.header__social li:nth-child(3) {
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+.header__social li:nth-child(4) {
+    margin-left: 0px;
+}
+
+.header__social_icon, .header__social_icon:visited {
+    color: #CFCEC7;
+}
+
+.header__social_icon:hover {
+    color: #E8ECEB;
+}
+
+.header__social_icon_vk {
+    font-size: 19px;
+    border: 2px solid #CFCEC7;
+    border-radius: 5px;
+    padding: 1px 3px;
+}
+
+.header__social_icon_vk:hover, .header__social_icon_fb:hover {
+    border-color: #E8ECEB;
+}
+
+.header__social_icon_fb {
+    font-size: 20px;
+    border: 2px solid #CFCEC7;
+    border-radius: 5px;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    padding-left: 15px;
+    padding-right: 5px;
+}
+
+.header__social_icon_inst, .header__social_icon_tw {
+    font-size: 33px;
+}
+
+.header__menu_background {
+    min-height: 39px;
+}
+
+.header__menu {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    padding-top: 7px;
+    padding-left: 66px;
+    margin: 0;
+}
+
+.header__menu li {
+    list-style-type: none;
+}
+
+.header__menu li::after {
+    content: "\2022";
+    font-size: 25px;
+    font-weight: bold;
+    color: #06BAC5;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.header__menu li:nth-child(4)::after {
+    content: "";
+    margin: 0;
+}
+
+.header__menu li a, .header__menu li a:visited {
+    color: #06BAC5;
+    font-family: "Roboto", sans-serif;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+.header__menu li a:hover {
+    color: #EB477B;
+    text-decoration: none;
+}
+
+.main__background {
+    background-image: url("./img/design-2461957_1920.png");
+    background-size: 50%;
+    background-repeat: no-repeat;
+    background-position: top 155px left 242px;
+    min-height: 940px;
+}
+
+.main__title {
+    font-family: "Philosopher", sans-serif;
+    font-size: 55px;
+    color: #005C7B;
+    margin-top: 81px;
+    line-height: 109px;
+}
+
+.main__subtitle {
+    font-family: "Roboto", sans-serif;
+    font-size: 24px;
+    color: #005C7B;
+    margin-top: 85px;
+}
+
+.main__button {
+    background-color: #005C7B;
+    font-family: "Roboto", sans-serif;
+    color: #EEEEED;
+    font-size: 30px;
+    margin-top: 48px;
+    margin-right: 7px;
+}
+
+.main__button:hover {
+    background-color: #EB477B;
+    color: #EEEEED;
+}
+
+.about__background {
+    background-color: white;
+    min-height: 1081px;
+}
+
+.about__title {
+    font-family: "Philosopher", sans-serif;
+    font-size: 60px;
+    color: rgba(0,92,123,255);
+    text-align: center;
+    margin-top: 117px;
+    margin-left: 8px;
+    font-weight: bold;
+    margin-bottom: 92px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.about__text {
+    font-family: "Roboto", sans-serif;
+    font-size: 24px;
+    color: rgba(0,92,123,255);
+    text-align: justify;
+    text-align-last: center;
+    line-height: 30px;
+    margin-bottom: 25px;
+}
+
+.about__subrow {
+    margin-top: 90px;
+}
+
+.about__subblock:nth-child(1) .about__pic {
+    margin-right: 57px;
+}
+
+.about__subblock:nth-child(1) .about__subtitle {
+    margin-top: 33px;
+    margin-right: 75px;
+}
+
+.about__subblock:nth-child(1) .about__subtext {
+    margin-right: 78px;
+    margin-top: 14px;
+}
+
+.about__subblock:nth-child(2) .about__pic {
+    margin-left: 13px;
+}
+
+.about__subblock:nth-child(2) .about__subtitle {
+    margin-top: 32px;
+    margin-left: 16px;
+}
+
+.about__subblock:nth-child(2) .about__subtext {
+    margin-top: 16px;
+    margin-left: 20px;
+}
+
+.about__subblock:nth-child(3) .about__pic {
+    margin-left: 89px;
+}
+
+.about__subblock:nth-child(3) .about__subtitle {
+    margin-top: 40px;
+    margin-left: 99px;
+}
+
+.about__subblock:nth-child(3) .about__subtext {
+    margin-top: 17px;
+    margin-left: 111px;
+}
+
+.about__subtitle {
+    font-family: "Philosopher", sans-serif;
+    font-size: 30px;
+    color: rgba(0,92,123,255);
+}
+
+.about__subtext {
+    font-family: "Roboto", sans-serif;
+    font-size: 18px;
+    color: rgba(0,141,170,255);
+}
+
+.advantages__background {
+    min-height: 1081px;
+}
+
+.advantages__title {
+    font-family: "Philosopher", sans-serif;
+    font-size: 60px;
+    color: rgba(0,92,123,255);
+    margin-top: 116px;
+    font-weight: bold;
+    margin-bottom: 40px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    letter-spacing: 0px;
+}
+
+.advantages__text {
+    font-family: "Roboto", sans-serif;
+    font-size: 30px;
+    color: rgba(0,92,123,255);
+    line-height: 96px;
+    padding-left: 64px;
+}
+
+.advantages__text li {
+    list-style-type: none;
+}
+
+.advantages__text li span {
+    margin-left: 42px;
+}
+
+.advantages__text li::before {
+    font-family: "Font Awesome 5 Free";
+    content: "\f058";
+}
+
+.questions__background {
+    background-color: white;
+    min-height: 1081px;
+}
+
+.questions__title {
+    font-family: "Philosopher", sans-serif;
+    font-size: 60px;
+    color: rgba(0,92,123,255);
+    margin-top: 119px;
+    font-weight: bold;
+    margin-bottom: 60px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    letter-spacing: 0px;
+}
+
+#accordionQuestions {
+    padding-left: 41px;
+}
+
+.questions__item_open, .questions__item_closed {
+    font-family: "Philosopher", sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    color: rgba(0,141,170,255);
+    line-height: 26px;
+    margin-bottom: 5px;
+}
+
+.questions__item_closed {
+    margin-bottom: 52px;
+}
+
+.questions__item_closed::before {
+    font-family: "Font Awesome 5 Free";
+    content: "\f0d7";
+}
+
+.questions__item_open::before {
+    font-family: "Font Awesome 5 Free";
+    content: "\f0d8";
+}
+
+.questions__item_link, .questions__item_link:visited {
+    margin-left: 14px;
+    color: #008DAA;
+}
+
+.questions__item_link:hover {
+    color: #008DAA;
+    text-decoration: underline;
+}
+
+.questions__item_text {
+    font-family: "Roboto", sans-serif;
+    font-style: italic;
+    font-size: 18px;
+    color: #005C7E;
+    margin-bottom: 40px;
+    line-height: 24px;
+}
+
+.questions__subtitle {
+    font-family: "Philosopher", sans-serif;
+    font-weight: 700;
+    font-size: 36px;
+    color: #008DAB;
+    margin-bottom: 30px
+}
+
+.questions__subtext {
+    font-family: "Philosopher", sans-serif;
+    font-weight: 700;
+    font-size: 36px;
+    color: rgba(0,92,123,255);
+}
+
+.questions__subtext a {
+    text-decoration: underline;
+    color: #005C7B;
+}
+
+.questions__subtext a:hover {
+    color: #EB477B;
+}
+
+.reviews__background {
+    min-height: 1081px;
+}
+
+.reviews__title {
+    font-family: "Philosopher", sans-serif;
+    font-size: 60px;
+    color: rgba(0,92,123,255);
+    margin-top: 115px;
+    font-weight: bold;
+    margin-bottom: 99px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    letter-spacing: 0px;
+    margin-left: 47px;
+}
+
+.reviews__text {
+    font-family: "Roboto", sans-serif;
+    font-style: italic;
+    font-size: 18px;
+    color: rgba(0,92,123,255);
+    line-height: 22px;
+    text-indent: 15px;
+    width: 65%;
+}
+
+.reviews__photo {
+    width: 111px;
+    height: 113px;
+    margin-left: 50px;
+    margin-bottom: 14px;
+    margin-top: 12px;
+}
+
+.reviews__photo_caption {
+    font-family: "Philosopher", sans-serif;
+    font-size: 30px;
+    color: rgba(0,141,170,255);
+    margin-left: 59px;
+    line-height: 37px;
+}
+
+.reviews__icon {
+    color: #D4D0C8;
+    font-size: 45px;
+}
+
+.reviews__icon:hover {
+    color: #EB477B;
+}
+
+.reviews__icon_left {
+    align-items: start;
+    top: 67px;
+    left: 12px;
+}
+
+.reviews__icon_right {
+    align-items: start;
+    top: 66px;
+    right: 8px;
+}
+
+.contacts__background {
+    min-height: 900px;
+    background-color: white;
+}
+
+.contacts__title {
+    font-family: "Philosopher", sans-serif;
+    font-size: 60px;
+    color: rgba(0,92,123,255);
+    margin-top: 115px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    letter-spacing: 0px;
+    margin-left: 0px;
+    margin-bottom: 154px;
+}
+
+.contacts__text {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-size: 30px;
+    color: #005C7D;
+}
+
+.contacts__pic {
+    margin-left: 0px;
+}
+
+.contacts__link, .contacts__link:visited {
+    color: #008DAA;
+    text-decoration: underline 2px;
+    margin-left: 14px
+}
+
+.contacts__link:hover {
+    color: #EB477B;
+}
+
+.contacts__subtitle {
+    margin-top: 137px;
+    margin-bottom: 39px;
+    margin-right: 33px;
+}
+
+.contacts__social {
+    padding-left: 265px;
+    padding-right: 338px;
+}
+
+.contacts__social ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 0px;
+}
+
+.contacts__social li {
+    list-style-type: none;
+}
+
+.contacts__social_icon, .contacts__social_icon:visited {
+    color: #008DAA;
+}
+
+.contacts__social_icon:hover {
+    color: #EB477B;
+}
+
+.contacts__social_icon_vk {
+    font-size: 40px;
+    border: 2px solid #008DAA;
+    border-radius: 5px;
+    padding: 1px 3px;
+}
+
+.contacts__social_icon_vk:hover, .contacts__social_icon_fb:hover {
+    border-color: #EB477B;
+}
+
+.contacts__social_icon_fb {
+    font-size: 40px;
+    border: 2px solid #008DAA;
+    border-radius: 5px;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    padding-left: 15px;
+    padding-right: 5px;
+}
+
+.contacts__social_icon_inst, .contacts__social_icon_tw {
+    font-size: 70px;
+}
+
+.footer__background {
+    min-height: 181px;
+    background-color: #005C7B;
+}
+
+.footer__text {
+    font-family: "Roboto", sans-serif;
+    font-size: 24px;
+    color: #EEEEED;
+    padding-top: 7px;
+}
+
+.footer__link, .footer__link:visited, .footer__link:hover {
+    font-size: 18px;
+    color: #EEEEED;
+    text-decoration: underline;
+}
+
+
+@media screen and (max-width: 1199px) {
+    .headerBackground {
+        padding-bottom: 15px;
+    }
+    
+    .header__social, .header__menu {
+        justify-content: space-around;
+    }
+
+    .main__background {
+        background-position: top 260px left 35px;
+        padding-right: 15px;
+    }
+
+    .about__subrow {
+        margin-top: 15px;
+    }
+
+    .about__subblock:nth-child(1) .about__pic, .about__subblock:nth-child(2) .about__pic, .about__subblock:nth-child(3) .about__pic,
+    .about__subblock:nth-child(1) .about__subtitle, .about__subblock:nth-child(2) .about__subtitle, .about__subblock:nth-child(3) .about__subtitle,
+    .about__subblock:nth-child(1) .about__subtext, .about__subblock:nth-child(2) .about__subtext, .about__subblock:nth-child(3) .about__subtext {
+        margin: 15px 0px;
+    }
+
+    .reviews__icon_left {
+        margin-left: 0px;
+        margin-bottom: 0px;
+    }
+    
+    .reviews__icon_right {
+        margin-left: 0px;
+        margin-bottom: 0px;
+    }
+
+    .contacts__subtitle {
+        margin-right: 0px;
+    }
+
+    .contacts__social {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+
+    .contacts__social ul {
+        justify-content: space-around;
+    }
+}
+
+@media screen and (max-width: 1919px) {
+    .main__background {
+        background-position: top 210px left 35px;
+        padding-right: 15px;
+    }
+}

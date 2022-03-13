@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Практическая работа 5.10</title>    
+</head>
+<body>
+    
+    <script>
+        {
+            "use strict";
+            
+            let propertyArray = [];
+            let counter = 0;
+
+            for (let propertyName in navigator) {
+                propertyArray[counter++] = [propertyName];
+            }
+            propertyArray.sort();
+
+            document.write('<table border="1">');
+            document.write('<tr><th>Свойство</th><th>Значение</th>');            
+            for (counter = 0; counter < propertyArray.length; counter++) {
+                document.write('<tr><td>');
+                document.write(propertyArray[counter]);
+                document.write('</td><td>');
+                document.write(navigator[propertyArray[counter]]);
+                document.write('</td></tr>');
+            }
+            document.write('</table>');
+        }
+    </script>
+</body>
+</html>

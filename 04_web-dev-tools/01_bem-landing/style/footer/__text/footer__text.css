@@ -1,0 +1,27 @@
+.footer__text {
+    font-family: "helveticaneuecyr-light";
+    font-size: 24px;
+    color: #FFFFFF;
+    display: flex;
+    align-items: flex-end;
+}
+
+.footer__text_content-adress {
+    padding-left: 119px;
+    width: 276px;
+    padding-bottom: 18px;
+    letter-spacing: -0.4px;
+}
+
+.footer__text_content-email {
+    padding-bottom: 40px;
+    width: 304px;
+    padding-left: 96px;
+    letter-spacing: -0.5px;
+}
+
+.footer__text_content-phone {
+    padding-bottom: 40px;
+    width: 188px;
+    padding-left: 105px;
+}

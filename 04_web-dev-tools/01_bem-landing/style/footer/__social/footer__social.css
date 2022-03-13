@@ -1,0 +1,9 @@
+.footer__social {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding-left: 3px;
+    padding-right: 3px;
+    width: 148px;
+}

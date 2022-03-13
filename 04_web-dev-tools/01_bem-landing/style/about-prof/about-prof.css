@@ -1,0 +1,11 @@
+@import url("./__container/about-prof__container.css");
+@import url("./__pic/about-prof__pic.css");
+@import url("./__text/about-prof__text.css");
+@import url("./__title/about-prof__title.css");
+@import url("./__p/about-prof__p.css");
+
+
+.about-prof {
+    height: 686px;
+    background-color: #040440;
+}

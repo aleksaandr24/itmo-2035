@@ -1,0 +1,12 @@
+@import url("./__container/footer__container.css");
+@import url("./__social/footer__social.css");
+@import url("./__link/footer__link.css");
+@import url("./__text/footer__text.css");
+
+.footer {
+    height: 116px;
+    background-color: #080742;
+    padding-left: 354px;
+    display: flex;
+    flex-direction: row;
+}

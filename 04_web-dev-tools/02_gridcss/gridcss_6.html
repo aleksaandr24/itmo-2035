@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/style.css">
+    <title>Самостоятельная работа 2. Grid CSS Задание 6</title>
+    <style>
+		* {
+            box-sizing: border-box;
+        }
+
+		.wrapper {
+            border: 2px solid #f76707;
+            border-radius: 5px;
+            background-color: #fff4e6;
+		}
+		
+        .box {
+            border: 2px solid #ffa94d;
+            border-radius: 5px;
+            background-color: #ffd8a8;
+            padding: 1em;
+            color: #d9480f;
+		}
+		
+        .box1 {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-column-start: 1;
+            grid-column-end: 4;
+            grid-row-start: 1;
+            grid-row-end: 3;
+		}
+
+        .nested {
+            border: 2px solid #ffec99;
+            border-radius: 5px;
+            background-color: #fff9db;
+            padding: 1em;
+		}
+	</style>
+</head>
+<body>
+    <div class="container">
+        <div class="wrapper">
+            <div class="box box1">
+                <div class="nested">a</div>
+                <div class="nested">b</div>
+                <div class="nested">c</div>
+            </div>
+            <div class="box box2">Two</div>
+            <div class="box box3">Three</div>
+            <div class="box box4">Four</div>
+            <div class="box box5">Five</div>
+        </div>
+    </div>
+</body>
+</html>

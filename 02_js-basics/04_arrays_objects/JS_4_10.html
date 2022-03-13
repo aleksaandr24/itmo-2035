@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Самостоятельная работа 4.10</title>
+</head>
+<body>
+    <script>
+        {
+            "use strict";            
+            
+            let person = {                
+                name: "",
+                surname: "",
+                setName: function(nameToSet) {
+                    this.name = nameToSet;
+                },
+                setSurname: function(surnameToSet) {
+                    this.surname = surnameToSet;
+                },
+                getFullName: function() {
+                    return this.name.concat(" ", this.surname);
+                }
+            };
+
+            person.setName("Имя");
+            console.log(person.name); // Имя            
+            person.setSurname("Фамилия");
+            console.log(person.surname); // Фамилия
+            console.log(person.getFullName()); // Имя Фамилия
+        }
+    </script>
+</body>
+</html>

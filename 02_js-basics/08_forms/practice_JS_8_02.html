@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Практическая работа 8.2</title>
+</head>
+<body>
+    <form action="#" method="post" name="order">
+        <p>
+            Имя: <input type="text" name="formName"><br>
+            Фамилия: <input type="text" name="formLastname"><br>
+            Email: <input type="text" name="formEmail"><br>
+            <input name="submit" value="Submit" type="submit" onclick="display();">
+            <input name="reset" value="Reset" type="reset">
+        </p>
+    </form>
+    <script>
+        {
+            "use strict";
+
+            function display() {
+                alert("Значение Email: " + document.forms.order.formEmail.value);
+            }
+        }
+    </script>
+</body>
+</html>

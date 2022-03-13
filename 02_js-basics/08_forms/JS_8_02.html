@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Самостоятельная работа 8.2</title>
+</head>
+<body>
+    <form name="order" action="#" method="post">
+        <p>
+            <label>Имя: <br><input type="text" name="formName"></label><br>
+            <label>Фамилия: <br><input type="text" name="formLastname"></label><br>
+            <label>Email: <br><input type="text" name="formEmail"></label><br>            
+            <button type="button" id="sendForm">Отправить</button>
+        </p>
+    </form>
+    <p class="valueOfEMail"></p>
+    <script>
+        {
+            "use strict";
+
+            function display(event) {
+                event.preventDefault();
+                let text = "Значение Email: " + document.forms.order.formEmail.value;
+                console.log(text);
+                document.getElementsByClassName("valueOfEMail")[0].innerText = text;
+            }
+
+            document.getElementById("sendForm").addEventListener("click", display);
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Самостоятельная работа 8.4</title>
+    <style>
+        .typeOfVehicles label {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <form action="http://www.ya.ru" method="post">
+        <label>Имя: <br><input type="text" name="Fname"></label><br>
+        <label>Фамилия: <br><input type="text" name="Lname"></label><br>
+        <label>Email: <br><input type="text" name="Email" onblur="checkInputEmail(this.value)"></label><br>
+        <input name="Submit" value="Submit" type="submit">
+        <input name="Reset" value="Reset" type="reset">
+    </form>
+    <script>
+        {
+            "use strict";
+
+            function validateEmail(email) {
+                let Location = email.indexOf('@')
+                if (Location == -1) {
+                    return false;
+                }
+                return true;
+            }
+
+            function checkInputEmail(EmailAddress) {
+                console.log("Введено значение EmailAddress: " + EmailAddress);
+                let checkMail = validateEmail(EmailAddress);
+                console.log("Результат проверки validateEmail: " + checkMail);
+                let emailForm = document.forms[0].Email;
+                if (checkMail == false) {
+                    emailForm.style.color = "red";
+                    emailForm.style.outline = "1px solid red";
+                    alert('Введите Email! Формат: имя_ящика@платформа');
+                } else {
+                    emailForm.style.color = "black";
+                    emailForm.style.outline = "none";
+                }
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Практическая работа 8.9</title>
+</head>
+<body>
+    <form name="contact" action="#" method="post">
+        <p>
+            Имя: <input type="text" name="formName" onchange="enableEmail();"><br>
+            Фамилия: <input type="text" name="formLastname" onchange="enableEmail();"><br>
+            Email: <input type="text" name="formEmail" disabled="true"><br>
+            <input name="submit" value="Submit" type="submit">
+            <input name="reset" value="Reset" type="reset">
+        </p>
+    </form>
+    <script>
+        {
+            "use strict";
+
+            function enableEmail() {
+                with(document.forms.contact) {
+                    if (formName.value.length > 0 && formLastname.value.length > 0) {
+                        formEmail.disabled = false;
+                    }
+                }
+            }
+        }
+    </script>
+</body>
+</html>

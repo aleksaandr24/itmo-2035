@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Практическая работа 5.21</title> 
+</head>
+<body>
+    <script>
+        {
+            "use strict";
+            
+            randomNumber = (lowerBound, upperBound) => {
+                let initialRandom = (upperBound - lowerBound + 1) * Math.random() + lowerBound;
+                return Math.floor(initialRandom);
+            }
+
+            let total1 = 0, total2 = 0, total3 = 0, total4 = 0, total5 = 0, total6 = 0, lower = 1, upper = 6;
+            for (let i = 1; i <= 10000; i++) {
+                thisToss = randomNumber(lower, upper);
+                switch (thisToss) { 
+                    case 1: 
+                        total1++; 
+                        break; 
+                    case 2: 
+                        total2++;
+                        break; 
+                    case 3: 
+                        total3++; 
+                        break; 
+                    case 4: 
+                        total4++; 
+                        break; 
+                    case 5: 
+                        total5++; 
+                        break; 
+                    case 6: 
+                        total6++; 
+                } 
+            } 
+            document.write("<pre>");
+            document.writeln("Единицы:   " + total1);
+            document.writeln("Двойки:   " + total2);
+            document.writeln("Тройки: " + total3);
+            document.writeln("Четверки:  " + total4);
+            document.writeln("Пятерки:  " + total5);
+            document.writeln("Шестерки:  " + total6);
+            document.write("</pre>")            
+        }
+    </script>
+</body>
+</html>

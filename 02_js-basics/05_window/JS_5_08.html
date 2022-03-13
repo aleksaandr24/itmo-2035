@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Самостоятельная работа 5.8</title>
+</head>
+<body>
+    Введите кол-во миллисекунд: <input type="text" value="1628414191622" id="inputMS"><br>
+    <input type="button" value="Показать дату" onclick="printPrettyDate()"><br>
+    <b id="outputB"></b>
+    <script>
+        {
+            "use strict";
+            
+            function getDateProperties(milliseconds) {
+                let newDate = new Date(milliseconds);
+                let newDateObject = {};
+                newDateObject["day"] = newDate.getDay();
+                newDateObject["date"] = newDate.getDate();
+                newDateObject["month"] = newDate.getMonth() + 1;
+                newDateObject["year"] = newDate.getFullYear();
+                newDateObject["hours"] = newDate.getHours();
+                newDateObject["minutes"] = newDate.getMinutes();
+                newDateObject["seconds"] = newDate.getSeconds();
+                return newDateObject;
+            }
+
+            function getNameOfMonth(monthNumber) {
+                switch (monthNumber) {
+                    case 1: return "Января";
+                    case 2: return "Февраля";
+                    case 3: return "Марта";
+                    case 4: return "Апреля";
+                    case 5: return "Мая";
+                    case 6: return "Июня";
+                    case 7: return "Июля";
+                    case 8: return "Августа";
+                    case 9: return "Сентября";
+                    case 10: return "Октября";
+                    case 11: return "Ноября";
+                    case 12: return "Декабря";
+                }                
+            }
+            
+            function printPrettyDate() {
+                let userMS = Number(document.getElementById("inputMS").value);
+                let dateObj = getDateProperties(userMS);
+                let outputText = dateObj.date + " " + getNameOfMonth(dateObj.month) + " " + dateObj.year + ", " + 
+                dateObj.hours + ":" + dateObj.minutes + ":" + dateObj.seconds;
+                document.getElementById("outputB").innerHTML = outputText;
+            }
+        }
+    </script>
+</body>
+</html>

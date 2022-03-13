@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Практическая работа 5.2</title>    
+</head>
+<body>
+    <button onclick="cansel_status()">Отмена задержки</button>
+    <script>
+        {
+            "use strict";
+            
+            let timeout_id = window.setTimeout("clear_status()", 5000);
+            clear_status = () => {
+                alert("Hello, World!");
+            }
+
+            cancel_status = () => {
+                clearTimeout(timeout_id);
+                alert("Задержка отменена!");
+            }
+        }
+    </script>
+</body>
+</html>

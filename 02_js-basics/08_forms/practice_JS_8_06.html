@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Практическая работа 8.6</title>
+</head>
+<body>
+    <form name="contact" action="#" method="post">
+        <p>
+            <input type="checkbox" name="HS" value="HS">Яблоко<br>
+            <input type="checkbox" name="AD" value="AD">Апельсин<br>
+            <input type="checkbox" name="BD" value="BD">Манго<br>
+            <input type="checkbox" name="MD" value="MD">Ананас<br>
+            <input type="checkbox" name="DD" value="DD">Грейпфрут<br>
+            <input name="process" value="process" type="reset" onclick="fruit();">
+        </p>
+    </form>
+    <script>
+        {
+            "use strict";
+
+            function fruit() {
+                let selection = "Вы выбрали: ";
+                with(document.forms.contact) {
+                    if (HS.checked == true) selection += "Яблоко ";
+                    if (AD.checked == true) selection += "Апельсин ";
+                    if (BD.checked == true) selection += "Манго ";
+                    if (MD.checked == true) selection += "Ананас ";
+                    if (DD.checked == true) selection += "Грейпрут ";
+                }
+                alert(selection);
+            }
+        }
+    </script>
+</body>
+</html>

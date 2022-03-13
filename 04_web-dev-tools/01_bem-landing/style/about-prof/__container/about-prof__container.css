@@ -1,0 +1,7 @@
+.about-prof__container {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    margin-left: 354px;
+    padding-top: 45px;
+}

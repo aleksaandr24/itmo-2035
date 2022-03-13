@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8"/>    
+    <title>Самостоятельная работа № 3.1</title>
+</head>
+<body>  
+    <h1>Продажа квартир КВАДРИТО</h1>
+    <form action="#" method="post">
+        <table border="0">
+            <tr>
+                <td colspan="3"><p>Заполните форму ниже о квартире, которую хотите выставить на продажу:</p></td>
+            </tr>
+            <tr>
+                <td><strong>Город:</strong></td>
+                <td colspan="2">
+                    <select>
+                        <option value="-1" name="city" selected="selected">Выберите город для продажи_______________</option>
+                        <option value="0" name="city">Москва</option>
+                        <option value="1" name="city">Санкт-Петербург</option>
+                        <option value="2" name="city">Новосибирск</option>
+                        <option value="3" name="city">Воронеж</option>
+                        <option value="4" name="city">Вологда</option>
+                        <option value="5" name="city">Магадан</option>
+                    </select>
+                </td>
+            </tr>
+            <tr valign="top">
+                <td><strong>Материал здания:</strong></td>
+                <td colspan="2">
+                    <input type="checkbox" name="type_material" value="0">Кирпич<br/>
+                    <input type="checkbox" name="reading" value="1">Блоки<br/>
+                    <input type="checkbox" name="reading" value="2">Монолит<br/>
+                    <input type="checkbox" name="reading" value="3">Панель<br/>
+                    <input type="checkbox" name="reading" value="4">Дерево<br/>
+                </td>
+            </tr>
+            <tr>
+                <td><strong>Общая площадь (м<sup>2</sup>)</strong></td>
+                <td><input type="text" name="basic_m_start" placeholder="от" size="21"></td>
+                <td><input type="text" name="basic_m_end" placeholder="до" size="21"></td>
+            </tr>
+            <tr>
+                <td><strong>Площадь кухни (м<sup>2</sup>)</strong></td>
+                <td><input type="text" name="kitchen_m_start" placeholder="от" size="21"></td>
+                <td><input type="text" name="kitchen_m_end" placeholder="до" size="21"></td>
+            </tr>
+            <tr>
+                <td><strong>Жилая площадь (м<sup>2</sup>)</strong></td>
+                <td><input type="text" name="live_m_start" placeholder="от" size="21"></td>
+                <td><input type="text" name="live_m_end" placeholder="до" size="21"></td>
+            </tr>
+            <tr>
+                <td><strong>Год постройки</strong></td>
+                <td><input type="text" name="years_start" placeholder="от" size="21"></td>
+                <td><input type="text" name="years_end" placeholder="до" size="21"></td>
+            </tr>
+            <tr valign="middle">
+                <td rowspan="2"><strong>Этаж</strong></td>
+                <td><input type="text" name="level_start" placeholder="от" size="21"></td>
+                <td><input type="text" name="level_end" placeholder="до" size="21"></td>
+            </tr>
+            <tr>
+                <td colspan="2"><input type="checkbox" name="not_end">Не последний</td>
+            </tr>
+            <tr>
+                <td><strong>Этажей в доме</strong></td>
+                <td><input type="text" name="house_levels_start" placeholder="от" size="21"></td>
+                <td><input type="text" name="house_levels_end" placeholder="до" size="21"></td>
+            </tr>
+            <tr>
+                <td><strong>До метро (по карте):</strong></td>
+                <td colspan="2">
+                    <select>
+                        <option value="-1" name="distance" selected="selected">Выберите расстояние_______________</option>
+                        <option value="500m" name="distance">До 7 мин. пешком (до 500 м)</option>
+                        <option value="1000m" name="distance">До 15 мин. пешком (до 1 км)</option>
+                        <option value="1500m" name="distance">До 21 мин. пешком (до 1,5 км)</option>
+                        <option value="3000m" name="distance">До 40 мин. пешком (до 3 км)</option>
+                        <option value="5000m" name="distance">До 1 часа пешком (до 5 км)</option>                        
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td><strong>Продавец</strong></td>
+                <td colspan="2">
+                    <input type="radio" name="saler" value="0">Не важно<br>
+                    <input type="radio" name="saler" value="1">Агенство<br>
+                    <input type="radio" name="saler" value="2">Собственник<br>
+                </td>
+            </tr>
+            <tr>
+                <td><input type="submit" value="Показать предложения"></td>
+                <td colspan="2"><input type="reset" value="Сбросить фильтры"></td>
+            </tr>
+        </table>
+    </form>    
+</body>
+</html>

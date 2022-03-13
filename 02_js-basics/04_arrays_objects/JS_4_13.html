@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Самостоятельная работа 4.13</title>
+</head>
+<body>
+    <script>
+        {
+            "use strict";
+            
+            let names = "Станислав, Нина, Илья, Николай, Ирина, Дмитрий, Алла";           
+            console.log(getSplitArr(names, ", "));
+            // Выводит ['Станислав', 'Нина', 'Илья', 'Николай', 'Ирина', 'Дмитрий', 'Алла']
+
+            function getSplitArr(str, sep) {
+                return str.split(sep);
+            }
+        }
+    </script>
+</body>
+</html>

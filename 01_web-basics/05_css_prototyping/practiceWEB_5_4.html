@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">    
+    <title>Практическая работа 5.4</title>
+    <style>
+        body, html {
+            padding: 0;
+            margin: 0;
+            background-color: teal;
+        }
+        
+        .container {
+            width: 950px;
+            margin: 0 auto;
+            background-color: #ccc;            
+        }
+
+        header > h1 {
+            margin: 0%;
+            padding: 15px 0;
+            text-align: center;
+            text-transform: uppercase;
+            border-bottom: 1px solid #fefefe;
+        }
+
+        header > nav > ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            border-bottom: 1px solid #fefefe;
+        }
+
+        header > nav > ul > li {
+            display: inline-block;
+            padding: 15px 30px;
+            border-left: 1px solid #fefefe;
+        }
+
+        header > nav > ul > li:last-child {
+            border-right: 1px solid #fefefe;            
+        }
+
+        header > nav > ul > li > a {
+            text-decoration: none;
+            color: black;
+        }
+
+        header > nav > ul > li > a:hover {
+            text-decoration: underline;
+            color: blue;
+        }
+
+        aside.leftSide {
+            width: 200px;
+            float: left;
+        }
+
+        aside.leftSide ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 15px;
+        }
+
+        aside.leftSide ul > li > a {
+            text-decoration: none;
+            color: black;
+            font-size: 18px;
+        }
+
+        aside.leftSide ul > li > a:hover {
+            text-decoration: underline;
+            color: blue;
+            font-size: 18px;
+        }
+
+        aside.rightSide {
+            width: 200px;
+            float: right;
+        }
+
+        aside.rightSide p {
+            padding: 15px 30px;
+        }
+
+        article {
+            margin: 0 200px; 
+            border-left: 1px solid #fefefe;
+            border-right: 1px solid #fefefe;
+            counter-reset: list 0;
+            padding-bottom: 15px;
+        }
+
+        section {
+            margin-bottom: 72px;
+            padding-left: 15px;
+            padding-right: 30px;
+        }
+
+        section:first-child > h3 {
+            margin-top: 0;
+            padding-top: 30px;
+        }
+
+        section > h3 > span:before {
+            counter-increment: list;
+            content: "Статья " counter(list) ": ";
+        }
+
+        section a {
+            text-align: center;
+            float: right;
+            display: inline-block;
+            background-color: red;
+            padding: 10px 18px;
+            color: #fff;
+            text-decoration: none;
+        }
+
+        footer {
+            border: 1px solid #fefefe;
+            text-align: center;
+            clear: both;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Шапка сайта</h1>
+            <nav>
+                <ul class="menu">
+                    <li><a href="#">Главная</a></li>
+                    <li><a href="#">Новости</a></li>
+                    <li><a href="#">Фото</a></li>
+                    <li><a href="#">Видео</a></li>
+                    <li><a href="#">Контакты</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <aside class="leftSide">
+                <ul>
+                    <li><a href="#">Главная</a></li>
+                    <li><a href="#">Новости</a></li>
+                    <li><a href="#">Фото</a></li>
+                    <li><a href="#">Видео</a></li>
+                    <li><a href="#">Контакты</a></li>
+                </ul>
+            </aside>
+            <aside class="rightSide">
+                <div>
+                    <p>Анектод дня</p>
+                    <p>Работал в одном банке программист, все было отлично, но в один прекрасный день пропал. День на работе нет, два…
+                    Поехали к программисту на дом. Дверь на замки не открывают, но а дверью слышен плеск воды. Решили ломать дверь.
+                    Заходят в квартиру – программист в очень жалком виде сидит в ванной: синий, на голове почти нет волос,
+                    в руке сжимает бутылку от шампуня. Вырвали у него эту бутылку – на ней “Инструкция по применению шампуня”: 
+                    Намочить голову. Выдавить небольшое количество шампуня на руку. Растереть шампунь по волосам. Смыть водой. Повторить</p>
+                </div>
+            </aside>
+            <article>
+                <section>
+                    <h3><span class="counter"></span>Наша статья</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed 
+                    do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim 
+                    ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut 
+                    aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit 
+                    in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur 
+                    sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt 
+                    mollit anim id est laborum.</p>
+                    <a href="#">Подробнее</a>
+                </section>
+                <section>
+                    <h3><span class="counter"></span>Наша статья</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed 
+                    do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim 
+                    ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut 
+                    aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit 
+                    in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur 
+                    sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt 
+                    mollit anim id est laborum.</p>
+                    <a href="#">Подробнее</a>
+                </section>
+                <section>
+                    <h3><span class="counter"></span>Наша статья</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed 
+                    do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim 
+                    ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut 
+                    aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit 
+                    in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur 
+                    sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt 
+                    mollit anim id est laborum.</p>
+                    <a href="#">Подробнее</a>
+                </section>
+                <section>
+                    <h3><span class="counter"></span>Наша статья</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed 
+                    do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim 
+                    ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut 
+                    aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit 
+                    in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur 
+                    sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt 
+                    mollit anim id est laborum.</p>
+                    <a href="#">Подробнее</a>
+                </section>
+                <section>
+                    <h3><span class="counter"></span>Наша статья</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed 
+                    do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim 
+                    ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut 
+                    aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit 
+                    in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur 
+                    sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt 
+                    mollit anim id est laborum.</p>
+                    <a href="#">Подробнее</a>
+                </section>
+            </article>
+        </main>
+        <footer>
+            <p>Copyright &copy; 2021</p>
+        </footer>
+    </div>
+</body>
+</html>

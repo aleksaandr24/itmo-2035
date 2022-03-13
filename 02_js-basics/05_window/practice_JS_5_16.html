@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Практическая работа 5.16</title>    
+</head>
+<body>
+    <b id="date"></b><br>
+    Введите год <input type="text" id="year"><br>
+    Введите месяц (1-12)<input type="text" id="month"><br>
+    Введите день <input type="text" id="day"><br>
+    <input type="button" value="Рассчитать" onclick="showDate();">
+    <script>
+        {
+            "use strict";
+            
+            showDate = () => {
+                let monthNamesArray = ["Январь", "Февраль", "Март", "Апрель",
+                                    "Май", "Июнь", "Июль", "Август", "Сентябрь",
+                                    "Октябрь", "Ноябрь", "Декабрь"];
+                dayNamesArray = ["Воскресенье", "Понедельник", "Вторник", "Среда",
+                                "Четверг", "Пятница", "Суббота"];
+                let userYear = document.getElementById("year").value;
+                let userMonth = document.getElementById("month").value;
+                let userDay = document.getElementById("day").value;
+                let userDate = new Date();
+                userDate.setFullYear(userYear);
+                userDate.setMonth(userMonth - 1);
+                userDate.setDate(userDay);
+                let monthName = monthNamesArray[userDate.getMonth()];
+                let dayName = dayNamesArray[userDate.getDay()];
+                text = "Введенная дата: " + userDay + " " + monthName + ", " +
+                        userYear + "<br>" + "Она соответствует дню недели: " + dayName;
+                document.getElementById("date").innerHTML = text;
+            }
+        }
+    </script>
+</body>
+</html>

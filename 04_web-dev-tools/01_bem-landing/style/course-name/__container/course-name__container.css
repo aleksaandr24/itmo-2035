@@ -1,0 +1,10 @@
+.course-name__container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: flex-start;
+    width: min-content;
+    height: 100%;
+    margin-left: 354px;
+    padding-top: 176px;
+}

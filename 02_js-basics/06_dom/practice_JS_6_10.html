@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Практическая работа 6.10</title>    
+</head>
+<body>
+    <ul id="list">
+        <li><a href="https://ya.ru">Пункт <b>1</b></a></li>
+    </ul>    
+    <input type="button" value="Клонировать все" onclick="addItem(true);"><br>    
+    <input type="button" value="Клонировать только узел" onclick="addItem(false);"><br>
+    <script>
+        {
+            "use strict";
+            
+            function addItem(cloneMode) {
+                let list = document.getElementById("list");
+                let oldItem = list.children[0];
+                let newItem = oldItem.cloneNode(cloneMode);
+                list.appendChild(newItem);
+            }
+        }
+    </script>
+</body>
+</html>

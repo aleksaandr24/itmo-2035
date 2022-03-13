@@ -1,0 +1,16 @@
+@import url("./__container/course-name__container.css");
+@import url("./__top-title/course-name__top-title.css");
+@import url("./__title/course-name__title.css");
+@import url("./__sub-title/course-name__sub-title.css");
+@import url("./__button-container/course-name__button-container.css");
+@import url("./__button-link/course-name__button-link.css");
+@import url("./__row/course-name__row.css");
+@import url("./__col/course-name__col.css");
+
+.course-name {
+    height: 892px;
+    background-color: #000035;
+    background-image: url("../../img/background.png");
+    /* padding-top: 174px;
+    padding-left: 354px; */
+}
